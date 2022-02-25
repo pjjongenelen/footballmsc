@@ -1,3 +1,7 @@
+"""
+Scrapes all grade html pages for the Eredivisie 2021-2022 so far.
+"""
+
 import pickle
 import scrapy
 
@@ -13,12 +17,10 @@ class GradesSpider(scrapy.Spider):
 
         for playing_round in urls:
             for url in playing_round:
-                yield scrapy.Request(url=url, callback=self.parse)
+                yield scrapy.Request(url="https://www.voetbal.com" + url + "noten/", callback=self.parse)
 
     def parse(self, response):
-        page = response.url.split("/")[-2]
-        filename = f'quotes-{page}.html'
-        with open(filename, 'wb') as f:
+        fixture = response.url.split("/")[-3].split("2022-")[-1]
+        filename = f"{fixture}-2122.html"
+        with open(f"{ROOT}/data/grades/{filename}", "wb") as f:
             f.write(response.body)
-        self.log("ZO ZIET LOGGEN ERUIT JONGUH!!!")
-        self.log(f'Saved file {filename}')
