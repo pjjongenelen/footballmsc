@@ -1,0 +1,123 @@
+{
+    "Eredivisie 2021" :
+    [
+        {
+            "gae-hee" : 
+            {
+                    "date" : "2021-08-13",
+                    "home_squad" : ["Hahn", "Deijl", "Nauber", "Bakker", "Kuipers", "Lucassen", "Brouwers", "Berden", "Rommens", "Oratmangoen", "Lidberg"],
+                    "home_ad_ratings" : [7.5, 6, 7, 6.5, 6, 5, 5.5, 5.5, 5, 5.5, 4],
+                    "home_vi_ratings" : [6.5, 6, 6.5, 6.5, 6.5, 5.5, 6, 5.5, 6, 5, 5],
+                    "home_goals" : 0,
+                    "away_squad" : ["Mulder", "Van Ewijk", "Van Beek", "Dresevic", "Kaib", "Kongolo", "Halilovic", "Veerman", "Van Bergen", "Veerman", "Van der Heide"],
+                    "away_ad_ratings" : [7, 6, 6, 6.5, 6, 6.5, 7, 7, 5, 5, 6],
+                    "away_vi_ratings" : [7, 7, 6.5, 7, 6, 6.5, 7.5, 7.5, 6.5, 5.5, 5.5],
+                    "away_goals" : 1
+            },
+
+            "rkc-az" :
+            {
+                    "date" : "2021-08-14",
+                    "home_squad" : [],
+                    "home_ad_ratings" : [],
+                    "home_vi_ratings" : [],
+                    "home_goals" : 1,
+                    "away_squad" : [],
+                    "away_ad_ratings" : [],
+                    "away_vi_ratings" : [],
+                    "away_goals" : 0
+            },
+
+            "her-psv" :
+            {
+                    "date" : "2021-08-14",
+                    "home_squad" : [],
+                    "home_ad_ratings" : [],
+                    "home_vi_ratings" : [],
+                    "home_goals" : 0,
+                    "away_squad" : [],
+                    "away_ad_ratings" : [],
+                    "away_vi_ratings" : [],
+                    "away_goals" : 2
+            },
+
+            "for-twe" :
+            {
+                    "date" : "2021-08-14",
+                    "home_squad" : [],
+                    "home_ad_ratings" : [],
+                    "home_vi_ratings" : [],
+                    "home_goals" : 2,
+                    "away_squad" : [],
+                    "away_ad_ratings" : [],
+                    "away_vi_ratings" : [],
+                    "away_goals" : 1
+            },
+
+            "aja-nec" :
+            {
+                    "date" : "2021-08-14",
+                    "home_squad" : [],
+                    "home_ad_ratings" : [],
+                    "home_vi_ratings" : [],
+                    "home_goals" : 5,
+                    "away_squad" : [],
+                    "away_ad_ratings" : [],
+                    "away_vi_ratings" : [],
+                    "away_goals" : 0
+            },
+
+            "cam-gro" :
+            {
+                    "date" : "2021-08-15",
+                    "home_squad" : ["Stevens", "Schmidt", "Mac-Intosch", "Schouten", "Bangura", "Breij", "Hoedemakers", "Maulun", "Doodeman", "Hendriks", "Kallon"],
+                    "home_ad_ratings" : [],
+                    "home_vi_ratings" : [],
+                    "home_goals" : 1,
+                    "away_squad" : ["Leeuwenburgh", "El Hankouri", "Te Wierik", "Kasanwirjo", "Gudmundsson", "Suslov", "Matusiwa", "El Messaoudi", "Dammers", "Ngonge", "De Leeuw"],
+                    "away_ad_ratings" : [],
+                    "away_vi_ratings" : [],
+                    "away_goals" : 2
+            },
+
+            "pec-vit" :
+            {
+                    "date" : "2021-08-15",
+                    "home_squad" : [],
+                    "home_ad_ratings" : [],
+                    "home_vi_ratings" : [],
+                    "home_goals" : 0,
+                    "away_squad" : [],
+                    "away_ad_ratings" : [],
+                    "away_vi_ratings" : [],
+                    "away_goals" : 1
+            },
+
+            "utr-spa" :
+            {
+                    "date" : "2021-08-15",
+                    "home_squad" : [],
+                    "home_ad_ratings" : [],
+                    "home_vi_ratings" : [],
+                    "home_goals" : 4,
+                    "away_squad" : [],
+                    "away_ad_ratings" : [],
+                    "away_vi_ratings" : [],
+                    "away_goals" : 0
+            },
+
+            "wil-fey" :
+            {
+                    "date" : "2021-08-15",
+                    "home_squad" : [],
+                    "home_ad_ratings" : [],
+                    "home_vi_ratings" : [],
+                    "home_goals" : 0,
+                    "away_squad" : [],
+                    "away_ad_ratings" : [],
+                    "away_vi_ratings" : [],
+                    "away_goals" : 4
+            }
+        }
+    ]
+}
