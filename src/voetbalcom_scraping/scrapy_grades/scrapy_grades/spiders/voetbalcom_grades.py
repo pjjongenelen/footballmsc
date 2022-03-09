@@ -13,7 +13,7 @@ class GradesSpider(scrapy.Spider):
 
     def start_requests(self):
         # get the urls for the rounds
-        with open(f"{ROOT}/data/voetbalcom_match_report_urls_eredivisie_2122.pkl", "rb") as f:
+        with open(f"{ROOT}/src/voetbalcom_scraping/voetbalcom_match_report_urls_eredivisie_2122.pkl", "rb") as f:
             urls = pickle.load(f)
 
         for playing_round in urls:
