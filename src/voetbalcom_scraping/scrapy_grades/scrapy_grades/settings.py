@@ -1,4 +1,4 @@
-# Scrapy settings for scrapy_voetbalcom project
+# Scrapy settings for scrapy_grades project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'scrapy_voetbalcom'
+BOT_NAME = 'scrapy_grades'
 
-SPIDER_MODULES = ['scrapy_voetbalcom.spiders']
-NEWSPIDER_MODULE = 'scrapy_voetbalcom.spiders'
+SPIDER_MODULES = ['scrapy_grades.spiders']
+NEWSPIDER_MODULE = 'scrapy_grades.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'scrapy_voetbalcom (+http://www.yourdomain.com)'
+#USER_AGENT = 'scrapy_grades (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'scrapy_voetbalcom.middlewares.ScrapyVoetbalcomSpiderMiddleware': 543,
+#    'scrapy_grades.middlewares.ScrapyGradesSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'scrapy_voetbalcom.middlewares.ScrapyVoetbalcomDownloaderMiddleware': 543,
+#    'scrapy_grades.middlewares.ScrapyGradesDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'scrapy_voetbalcom.pipelines.ScrapyVoetbalcomPipeline': 300,
+#    'scrapy_grades.pipelines.ScrapyGradesPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

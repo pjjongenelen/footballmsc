@@ -1,17 +1,18 @@
 """
-Scrapes all grade html pages for the Eredivisie 2021-2022 so far.
+Scrapes all grade pages for the Eredivisie 2021-2022 so far.
+Source: voetbal.com
 """
 
 import pickle
 import scrapy
 
-ROOT = "C:/Users/timjo/PycharmProjects/footballmsc"
+ROOT = "C:/Users/timjo/python_projects/footballmsc"
 
 class GradesSpider(scrapy.Spider):
     name = "grades"
 
     def start_requests(self):
-        # get the urls for the first two rounds
+        # get the urls for the rounds
         with open(f"{ROOT}/data/voetbalcom_match_report_urls_eredivisie_2122.pkl", "rb") as f:
             urls = pickle.load(f)
 
@@ -22,5 +23,5 @@ class GradesSpider(scrapy.Spider):
     def parse(self, response):
         fixture = response.url.split("/")[-3].split("2022-")[-1]
         filename = f"{fixture}-2122.html"
-        with open(f"{ROOT}/data/grades/{filename}", "wb") as f:
+        with open(f"{ROOT}/data/grades_html/{filename}", "wb") as f:
             f.write(response.body)

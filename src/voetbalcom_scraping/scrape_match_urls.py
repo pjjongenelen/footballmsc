@@ -4,7 +4,7 @@ import pickle
 import requests
 
 N_PLAYING_ROUNDS = 23
-ROOT = "C:/Users/timjo/PycharmProjects/footballmsc"
+ROOT = "C:/Users/timjo/python_projects/footballmsc"
 URLS = [f"https://www.voetbal.com/wedstrijdgegevens/ned-eredivisie-2021-2022-spieltag/{play_round}/" for play_round in range(1, 1 + N_PLAYING_ROUNDS)]
 
 match_reports = []
