@@ -1,0 +1,483 @@
+,number,name,position,birthday,age,height,foot,joined,contract,value,squad, twitter
+0,24,André Onana,Goalkeeper,"Apr 2, 1996",25,190,right,"Jan 14, 2015","Jun 30, 2022",15000000.0,Ajax, @AndreyOnana
+1,16,Jay Gorter,Goalkeeper,"May 30, 2000",21,190,right,"Jul 1, 2021","Jun 30, 2025",1500000.0,Ajax, @gorterjay
+2,1,Maarten Stekelenburg,Goalkeeper,"Sep 22, 1982",39,197,right,"Aug 1, 2020","Jun 30, 2022",550000.0,Ajax, @MStekelenburg
+3,-,Przemyslaw Tyton,Goalkeeper,"Jan 4, 1987",35,195,right,"Mar 7, 2022","Jun 30, 2022",300000.0,Ajax, @PrzemyslawTyton
+4,32,Remko Pasveer,Goalkeeper,"Nov 8, 1983",38,187,right,"Jul 1, 2021","Jun 30, 2023",250000.0,Ajax, -
+5,21,Lisandro Martínez,Centre-Back,"Jan 18, 1998",24,175,left,"Jul 1, 2019","Jun 30, 2025",32000000.0,Ajax, @LisandrMartinez
+6,2,Jurrien Timber,Centre-Back,"Jun 17, 2001",20,182,right,"Sep 18, 2020","Jun 30, 2024",30000000.0,Ajax, @JurrienTimber
+7,3,Perr Schuurs,Centre-Back,"Nov 26, 1999",22,191,right,"Jan 1, 2018","Jun 30, 2025",8000000.0,Ajax, -
+8,31,Nicolás Tagliafico,Left-Back,"Aug 31, 1992",29,172,left,"Jan 5, 2018","Jun 30, 2023",16000000.0,Ajax, @nico_taglia
+9,17,Daley Blind,Left-Back,"Mar 9, 1990",32,180,left,"Jul 17, 2018","Jun 30, 2023",13500000.0,Ajax, @BlindDaley
+10,12,Noussair Mazraoui,Right-Back,"Nov 14, 1997",24,183,right,"Mar 12, 2018","Jun 30, 2022",20000000.0,Ajax, -
+11,15,Devyne Rensch,Right-Back,"Jan 18, 2003",19,179,both,"Nov 10, 2020","Jun 30, 2025",10000000.0,Ajax, @RenschDevyne
+12,5,Sean Klaiber,Right-Back,"Jul 31, 1994",27,184,right,"Oct 1, 2020","Jun 30, 2023",4500000.0,Ajax, @seanklaiber
+13,4,Edson Álvarez,Defensive Midfield,"Oct 24, 1997",24,187,right,"Jul 22, 2019","Jun 30, 2025",20000000.0,Ajax, @EdsonAlvarez19
+14,8,Ryan Gravenberch,Central Midfield,"May 16, 2002",19,190,right,"Sep 12, 2019","Jun 30, 2023",35000000.0,Ajax, @RGravenberch
+15,20,Mohammed Kudus,Central Midfield,"Aug 2, 2000",21,177,left,"Jul 31, 2020","Jun 30, 2025",15000000.0,Ajax, @KudusMohammedGH
+16,25,Kenneth Taylor,Central Midfield,"May 16, 2002",19,182,left,"Nov 10, 2020","Jun 30, 2024",3000000.0,Ajax, -
+17,6,Davy Klaassen,Attacking Midfield,"Feb 21, 1993",29,179,right,"Oct 5, 2020","Jun 30, 2024",15000000.0,Ajax, @DavyKlaassen
+18,23,Steven Berghuis,Attacking Midfield,"Dec 19, 1991",30,182,left,"Jul 16, 2021","Jun 30, 2025",15000000.0,Ajax, -
+19,27,Mohamed Ihattaren,Attacking Midfield,"Feb 12, 2002",20,183,left,"Jan 30, 2022","Dec 31, 2022",5000000.0,Ajax, @iamIhattaren
+20,19,Zakaria Labyad,Attacking Midfield,"Mar 9, 1993",29,175,both,"Jul 1, 2018","Jun 30, 2022",4000000.0,Ajax, @labyad20
+21,10,Dusan Tadic,Left Winger,"Nov 20, 1988",33,181,left,"Jul 3, 2018","Jun 30, 2024",15000000.0,Ajax, @DT10_Official
+22,30,Mohamed Daramy,Left Winger,"Jan 7, 2002",20,180,right,"Aug 28, 2021","Jun 30, 2026",8500000.0,Ajax, -
+23,11,Antony,Right Winger,"Feb 24, 2000",22,172,left,"Jul 1, 2020","Jun 30, 2025",35000000.0,Ajax, @antony00
+24,22,Sébastien Haller,Centre-Forward,"Jun 22, 1994",27,190,right,"Jan 8, 2021","Jun 30, 2025",30000000.0,Ajax, @SallerSeb
+25,18,Brian Brobbey,Centre-Forward,"Feb 1, 2002",20,180,right,"Jan 1, 2022","Jun 30, 2022",7500000.0,Ajax, -
+26,9,Danilo Pereira,Centre-Forward,"Apr 7, 1999",22,174,right,"Jul 1, 2021","Jun 30, 2022",4200000.0,Ajax, @DaniloPereira9
+0,1,Peter Vindahl,Goalkeeper,"Feb 16, 1998",24,195,right,"Aug 16, 2021","Jun 30, 2025",900000.0,AZ Alkmaar, @PeterVindahl28
+1,12,Hobie Verhulst,Goalkeeper,"Apr 2, 1993",28,192,left,"Jul 1, 2020","Jun 30, 2023",425000.0,AZ Alkmaar, @HobieVerhulst
+2,16,Beau Reus,Goalkeeper,"Oct 30, 2001",20,198,left,"Jul 1, 2021","Jun 30, 2023",150000.0,AZ Alkmaar, -
+3,30,Mees Bakker,Goalkeeper,"Mar 11, 2001",20,187,right,"Jul 1, 2020","Jun 30, 2023",100000.0,AZ Alkmaar, @meesnummer1
+4,3,Pantelis Chatzidiakos,Centre-Back,"Jan 18, 1997",25,185,right,"Dec 4, 2015","Jun 30, 2024",3000000.0,AZ Alkmaar, @pantelis_hat
+5,4,Bruno Martins Indi,Centre-Back,"Feb 8, 1992",30,185,left,"Jul 5, 2021","Jun 30, 2025",2200000.0,AZ Alkmaar, -
+6,22,Timo Letschert,Centre-Back,"May 25, 1993",28,188,right,"Sep 3, 2020","Jun 30, 2023",700000.0,AZ Alkmaar, -
+7,31,Sam Beukema,Centre-Back,"Nov 17, 1998",23,188,right,"Jul 1, 2021","Jun 30, 2026",700000.0,AZ Alkmaar, -
+8,5,Owen Wijndal,Left-Back,"Nov 28, 1999",22,176,left,"Jul 1, 2017","Jun 30, 2023",12000000.0,AZ Alkmaar, -
+9,26,Milos Kerkez,Left-Back,"Nov 7, 2003",18,180,left,"Jan 29, 2022","Jun 30, 2026",300000.0,AZ Alkmaar, @MilosKerkez88
+10,2,Yukinari Sugawara,Right-Back,"Jun 28, 2000",21,179,right,"Jul 1, 2020","Jun 30, 2025",3000000.0,AZ Alkmaar, @ssggwwrrr
+11,15,Aslak Fonn Witry,Right-Back,"Mar 10, 1996",25,178,right,"Aug 9, 2021","Jun 30, 2026",1500000.0,AZ Alkmaar, -
+12,20,Jordy Clasie,Defensive Midfield,"Jun 27, 1991",30,169,right,"Jul 22, 2019","Jun 30, 2024",1800000.0,AZ Alkmaar, @JordyClasie
+13,14,Peer Koopmeiners,Defensive Midfield,"May 4, 2000",21,186,right,"Jul 1, 2021","Jun 30, 2025",700000.0,AZ Alkmaar, -
+14,6,Fredrik Midtsjö,Central Midfield,"Aug 11, 1993",28,176,right,"Aug 26, 2017","Jun 30, 2023",6000000.0,AZ Alkmaar, -
+15,24,Tijjani Reijnders,Central Midfield,"Jul 29, 1998",23,185,right,"Jan 1, 2018","Jun 30, 2025",1200000.0,AZ Alkmaar, -
+16,10,Dani de Wit,Attacking Midfield,"Jan 28, 1998",24,184,right,"Aug 30, 2019","Jun 30, 2024",2800000.0,AZ Alkmaar, -
+17,23,Mohamed Taabouni,Attacking Midfield,"Mar 29, 2002",19,178,right,"Jul 1, 2020","Jun 30, 2022",1500000.0,AZ Alkmaar, -
+18,-,Jeremy Helmer,Attacking Midfield,"Jul 3, 1997",24,180,right,"Jul 1, 2016","Jun 30, 2022",550000.0,AZ Alkmaar, -
+19,11,Jesper Karlsson,Left Winger,"Jul 25, 1998",23,179,right,"Sep 29, 2020","Jun 30, 2026",10000000.0,AZ Alkmaar, -
+20,8,Kamal Sowah,Right Winger,"Jan 9, 2000",22,179,left,"Jan 31, 2022","Jun 30, 2022",5000000.0,AZ Alkmaar, @SowahKamal
+21,7,Zakaria Aboukhlal,Right Winger,"Feb 18, 2000",22,179,both,"Aug 27, 2019","Jun 30, 2023",2000000.0,AZ Alkmaar, @ZAboukhlal
+22,18,Hakon Evjen,Right Winger,"Feb 14, 2000",22,173,left,"Jan 1, 2020","Jun 30, 2024",1500000.0,AZ Alkmaar, @haakonevjen26
+23,9,Vangelis Pavlidis,Centre-Forward,"Nov 21, 1998",23,186,both,"Jul 9, 2021","Jun 30, 2025",3000000.0,AZ Alkmaar, -
+24,17,Yusuf Barasi,Centre-Forward,"Mar 31, 2003",18,182,right,"Jan 20, 2022","Jun 30, 2025",500000.0,AZ Alkmaar, -
+25,21,Ernest Poku,Centre-Forward,"Jan 28, 2004",18,172,right,"Jan 28, 2022","Jun 30, 2026",300000.0,AZ Alkmaar, -
+26,19,Jelle Duin,Centre-Forward,"Jan 27, 1999",23,186,left,"Jul 1, 2021","Jun 30, 2024",200000.0,AZ Alkmaar, -
+0,1.0,Peter Leeuwenburgh,Goalkeeper,"Mar 23, 1994",27,196,right,"Jul 1, 2021","Jun 30, 2023",600000.0,FC Groningen, @pleeuwenburgh
+1,16.0,Jan Hoekstra,Goalkeeper,"Aug 4, 1998",23,190,right,"Jul 1, 2018","Jun 30, 2024",350000.0,FC Groningen, -
+2,25.0,Jan de Boer,Goalkeeper,"May 20, 2000",21,199,right,"Aug 29, 2019","Jun 30, 2022",25000.0,FC Groningen, -
+3,39.0,Owen van der Vlag,Goalkeeper,"Oct 2, 2003",18,m,,"Jul 1, 2021",-,25000.0,FC Groningen, -
+4,21.0,Neraysho Kasanwirjo,Centre-Back,"Feb 18, 2002",20,185,right,"Jul 1, 2021","Jun 30, 2024",1000000.0,FC Groningen, -
+5,5.0,Mike te Wierik,Centre-Back,"Jun 8, 1992",29,191,right,"Jan 19, 2021","Jun 30, 2024",650000.0,FC Groningen, -
+6,20.0,Marin Sverko,Centre-Back,"Feb 4, 1998",24,187,left,"Jul 1, 2021","Jun 30, 2024",600000.0,FC Groningen, -
+7,12.0,Radinio Balker,Centre-Back,"Sep 3, 1998",23,193,right,"Jul 1, 2021","Jun 30, 2024",500000.0,FC Groningen, -
+8,3.0,Bart van Hintum,Left-Back,"Jan 16, 1987",35,177,left,"Jul 6, 2019","Jun 30, 2022",300000.0,FC Groningen, -
+9,15.0,Yahya Kalley,Left-Back,"Mar 20, 2001",20,185,,"Aug 31, 2021","Jun 30, 2024",300000.0,FC Groningen, -
+10,40.0,Bjorn Meijer,Left-Back,"Mar 18, 2003",18,190,left,"Jul 1, 2021","Jun 30, 2023",250000.0,FC Groningen, -
+11,2.0,Damil Dankerlui,Right-Back,"Aug 24, 1996",25,172,right,"Jul 27, 2020","Jun 30, 2024",750000.0,FC Groningen, @DDankerlui
+12,18.0,Melayro Bogarde,Defensive Midfield,"May 28, 2002",19,184,right,"Jan 14, 2022","Jun 30, 2022",1500000.0,FC Groningen, -
+13,26.0,Daniël van Kaam,Defensive Midfield,"Jun 23, 2000",21,175,left,"Jul 1, 2019","Jun 30, 2023",1000000.0,FC Groningen, -
+14,6.0,Laros Duarte,Defensive Midfield,"Feb 28, 1997",25,180,right,"Aug 31, 2021","Jun 30, 2025",750000.0,FC Groningen, -
+15,14.0,Emmanuel Matuta,Defensive Midfield,"Feb 22, 2002",20,177,both,"Jan 20, 2022","Jun 30, 2026",300000.0,FC Groningen, @Emmanuelmatuta4
+16,7.0,Tomas Suslov,Attacking Midfield,"Jun 7, 2002",19,173,left,"Jul 1, 2020","Jun 30, 2026",2500000.0,FC Groningen, -
+17,10.0,Daleho Irandust,Attacking Midfield,"Jun 4, 1998",23,185,left,"Aug 31, 2021","Jun 30, 2026",2000000.0,FC Groningen, @Daleho_Irandust
+18,32.0,Luciano Valente,Attacking Midfield,"Oct 4, 2003",18,189,right,"Jul 1, 2021","Jun 30, 2023",2000000.0,FC Groningen, -
+19,11.0,Mo El Hankouri,Left Winger,"Jul 1, 1997",24,176,right,"Jul 1, 2019","Jun 30, 2022",900000.0,FC Groningen, -
+20,17.0,Sebastian Tounekti,Left Winger,"Jul 13, 2002",19,183,right,"Aug 31, 2021","Jun 30, 2022",200000.0,FC Groningen, -
+21,27.0,Cyril Ngonge,Right Winger,"May 26, 2000",21,179,left,"Jul 2, 2021","Jun 30, 2025",1400000.0,FC Groningen, @cyrilngonge27
+22,9.0,Jörgen Strand Larsen,Centre-Forward,"Feb 6, 2000",22,193,right,"Sep 9, 2020","Jun 30, 2024",3000000.0,FC Groningen, @jorgenwester
+23,19.0,Paulos Abraham,Centre-Forward,"Jul 16, 2002",19,178,both,"Jul 1, 2021","Jun 30, 2026",1500000.0,FC Groningen, -
+24,29.0,Romano Postema,Centre-Forward,"Feb 7, 2002",20,175,right,"Jan 1, 2020","Jun 30, 2024",325000.0,FC Groningen, -
+25,8.0,Michael de Leeuw,Centre-Forward,"Oct 7, 1986",35,178,right,"Jul 1, 2021","Jun 30, 2022",300000.0,FC Groningen, -
+26,33.0,Alex Mortensen,Centre-Forward,"Jul 13, 2002",19,m,,"Jul 1, 2021","Jun 30, 2022",25000.0,FC Groningen, -
+0,1.0,Lars Unnerstall,Goalkeeper,"Jul 20, 1990",31,198,right,"Jul 1, 2021","Jun 30, 2025",1500000.0,FC Twente, @LarsUnnerstall
+1,22.0,Jeffrey de Lange,Goalkeeper,"Apr 1, 1998",23,190,right,"Jul 1, 2018","Jun 30, 2024",50000.0,FC Twente, @JeffreydeLange_
+2,30.0,Ennio van der Gouw,Goalkeeper,"Jan 1, 2001",21,195,right,"Jul 1, 2020","Jun 30, 2022",50000.0,FC Twente, -
+3,15.0,Kik Pierie,Centre-Back,"Jul 20, 2000",21,183,left,"Jul 16, 2020","Jun 30, 2022",2000000.0,FC Twente, -
+4,35.0,Mees Hilgers,Centre-Back,"May 13, 2001",20,183,right,"Oct 17, 2020","Jun 30, 2023",1000000.0,FC Twente, -
+5,3.0,Robin Pröpper,Centre-Back,"Sep 23, 1993",28,190,right,"Jul 1, 2021","Jun 30, 2024",900000.0,FC Twente, @RobinPropper
+6,4.0,Julio Pleguezuelo,Centre-Back,"Jan 26, 1997",25,180,right,"Jul 1, 2019","Jun 30, 2022",800000.0,FC Twente, @JPleguezuelo
+7,5.0,Gijs Smal,Left-Back,"Aug 31, 1997",24,183,left,"Jul 1, 2020","Jun 30, 2023",600000.0,FC Twente, -
+8,2.0,Giovanni Troupée,Right-Back,"Mar 20, 1998",23,181,right,"Jul 1, 2021","Jun 30, 2022",600000.0,FC Twente, -
+9,20.0,Joshua Brenet,Right-Back,"Mar 20, 1994",27,181,right,"Jan 31, 2022","Jun 30, 2022",500000.0,FC Twente, @joshuabrenet
+10,36.0,Luca Everink,Right-Back,"Feb 9, 2001",21,179,right,"Sep 24, 2021","Jun 30, 2022",150000.0,FC Twente, -
+11,6.0,Wout Brama,Defensive Midfield,"Aug 21, 1986",35,176,right,"Jul 1, 2018","Jun 30, 2022",275000.0,FC Twente, @WoutBrama_
+12,23.0,Michal Sadilek,Central Midfield,"May 31, 1999",22,169,left,"Aug 7, 2021","Jun 30, 2022",2500000.0,FC Twente, @Sadilek32
+13,19.0,Ramiz Zerrouki,Central Midfield,"May 26, 1998",23,183,right,"Jul 1, 2020","Jun 30, 2023",1200000.0,FC Twente, @ibrahim_khellaf
+14,32.0,Jesse Bosch,Central Midfield,"Feb 1, 2000",22,176,right,"Jan 1, 2020","Jun 30, 2022",600000.0,FC Twente, -
+15,40.0,Casper Staring,Central Midfield,"Feb 1, 2001",21,186,right,"Jul 1, 2020","Jun 30, 2023",100000.0,FC Twente, -
+16,38.0,Max Bruns,Central Midfield,"Nov 6, 2002",19,183,right,"Feb 17, 2021","Jun 30, 2023",75000.0,FC Twente, -
+17,14.0,Michel Vlap,Attacking Midfield,"Jun 2, 1997",24,190,right,"Aug 10, 2021","Jun 30, 2022",2000000.0,FC Twente, @Michelvlap
+18,26.0,Denilho Cleonise,Left Winger,"Dec 8, 2001",20,179,left,"Aug 18, 2021","Jun 30, 2023",600000.0,FC Twente, -
+19,18.0,Dimitrios Limnios,Right Winger,"May 27, 1998",23,178,right,"Aug 6, 2021","Jun 30, 2022",1500000.0,FC Twente, -
+20,7.0,Vaclav Cerny,Right Winger,"Oct 17, 1997",24,182,left,"Jul 2, 2021","Jun 30, 2023",1000000.0,FC Twente, @Vaclavcerny1
+21,10.0,Virgil Misidjan,Right Winger,"Jul 24, 1993",28,173,both,"Jul 1, 2021","Jun 30, 2023",800000.0,FC Twente, @MisidjanVirgil
+22,39.0,Daan Rots,Right Winger,"Jul 25, 2001",20,179,left,"Feb 17, 2021","Jun 30, 2023",400000.0,FC Twente, -
+23,24.0,Jahnoah Markelo,Right Winger,"Jan 4, 2003",19,171,left,"Oct 14, 2021","Jun 30, 2023",50000.0,FC Twente, -
+24,27.0,Manfred Ugalde,Centre-Forward,"May 25, 2002",19,173,right,"Jul 1, 2021","Jun 30, 2022",1100000.0,FC Twente, -
+25,13.0,Ricky van Wolfswinkel,Centre-Forward,"Jan 27, 1989",33,186,right,"Jul 21, 2021","Jun 30, 2023",500000.0,FC Twente, @RvWolfswinkel9
+0,32.0,Eric Oelschlägel,Goalkeeper,"Sep 20, 1995",26,193,right,"Oct 5, 2020","Jun 30, 2022",650000.0,FC Utrecht, -
+1,16.0,Fabian de Keijzer,Goalkeeper,"May 10, 2000",21,193,right,"Jul 1, 2020","Jun 30, 2024",400000.0,FC Utrecht, @Fabiandekeijzer
+2,33.0,Mike van der Hoorn,Centre-Back,"Oct 15, 1992",29,190,right,"Aug 18, 2021","Jun 30, 2022",1600000.0,FC Utrecht, @mikevdhoorn1
+3,3.0,Tommy St. Jago,Centre-Back,"Jan 3, 2000",22,186,right,"Jul 1, 2020","Jun 30, 2024",1000000.0,FC Utrecht, -
+4,24.0,Christopher Mamengi,Centre-Back,"Apr 3, 2001",20,182,left,"Jul 1, 2021","Jun 30, 2023",425000.0,FC Utrecht, -
+5,14.0,Willem Janssen,Centre-Back,"Jul 4, 1986",35,186,right,"Jul 1, 2014","Jun 30, 2022",300000.0,FC Utrecht, @WillemJanssen86
+6,21.0,Django Warmerdam,Left-Back,"Sep 2, 1995",26,180,left,"Jul 1, 2020","Jun 30, 2023",1200000.0,FC Utrecht, -
+7,20.0,Arthur Zagre,Left-Back,"Oct 4, 2001",20,168,left,"Jul 1, 2021","Jun 30, 2023",1000000.0,FC Utrecht, @arthur2r3
+8,5.0,Hidde ter Avest,Right-Back,"May 20, 1997",24,182,right,"Jan 13, 2021","Jun 30, 2024",2000000.0,FC Utrecht, @hiddetavest
+9,2.0,Mark van der Maarel,Right-Back,"Aug 12, 1989",32,177,right,"Jul 1, 2009","Jun 30, 2023",400000.0,FC Utrecht, @MarkvdMaarel
+10,25.0,Sylian Mokono,Right-Back,"Mar 22, 1999",22,188,right,"Jul 1, 2021","Jun 30, 2024",200000.0,FC Utrecht, -
+11,6.0,Adam Maher,Defensive Midfield,"Jul 20, 1993",28,174,right,"Jul 1, 2019","Jun 30, 2023",3400000.0,FC Utrecht, @Ad8mmaher
+12,27.0,Quinten Timber,Central Midfield,"Jun 17, 2001",20,177,right,"Jul 1, 2021","Jun 30, 2024",2200000.0,FC Utrecht, @QuintenTimber
+13,8.0,Joris van Overeem,Central Midfield,"Jun 1, 1994",27,181,right,"Jul 1, 2018","Jun 30, 2022",1200000.0,FC Utrecht, @JorisvanOvereem
+14,28.0,Urby Emanuelson,Central Midfield,"Jun 16, 1986",35,176,left,"Jul 10, 2017","Jun 30, 2023",200000.0,FC Utrecht, @Urby28
+15,23.0,Bart Ramselaar,Attacking Midfield,"Jun 29, 1996",25,178,right,"Aug 24, 2019","Jun 30, 2022",3500000.0,FC Utrecht, @bartramselaar
+16,10.0,Simon Gustafson,Attacking Midfield,"Jan 11, 1995",27,185,left,"Jul 1, 2018","Jun 30, 2022",1800000.0,FC Utrecht, @simzci
+17,22.0,Sander van de Streek,Attacking Midfield,"Mar 24, 1993",28,180,right,"Jul 1, 2017","Jun 30, 2023",1400000.0,FC Utrecht, -
+18,26.0,Othmane Boussaid,Left Winger,"Mar 7, 2000",22,166,right,"Jul 1, 2018","Jun 30, 2024",1100000.0,FC Utrecht, -
+19,29.0,Moussa Sylla,Right Winger,"Nov 25, 1999",22,181,right,"Sep 15, 2020","Jun 30, 2023",1500000.0,FC Utrecht, @Msylla29
+20,7.0,Naoki Maeda,Right Winger,"Nov 17, 1994",27,176,left,"Jan 1, 2022","Jun 30, 2022",900000.0,FC Utrecht, -
+21,30.0,Remco Balk,Right Winger,"Mar 2, 2001",21,m,right,"Jan 20, 2021","Jun 30, 2025",400000.0,FC Utrecht, -
+22,37.0,Mohamed Mallahi,Right Winger,"Feb 13, 2000",22,181,right,-,"Jun 30, 2024",275000.0,FC Utrecht, -
+23,11.0,Mimoun Mahi,Centre-Forward,"Mar 13, 1994",27,181,right,"Aug 17, 2020","Jun 30, 2024",1600000.0,FC Utrecht, @mimoun_mahi
+24,9.0,Anastasios Douvikas,Centre-Forward,"Aug 2, 1999",22,186,,"Jul 1, 2021","Jun 30, 2025",1500000.0,FC Utrecht, -
+25,18.0,Henk Veerman,Centre-Forward,"Feb 26, 1991",31,201,right,"Jan 26, 2022","Jun 30, 2024",900000.0,FC Utrecht, -
+0,1.0,Justin Bijlow,Goalkeeper,"Jan 22, 1998",24,188,right,"Jul 1, 2016","Jun 30, 2025",13000000.0,Feyenoord, -
+1,21.0,Ofir Marciano,Goalkeeper,"Oct 7, 1989",32,193,right,"Jul 1, 2021","Jun 30, 2023",400000.0,Feyenoord, -
+2,30.0,Thijs Jansen,Goalkeeper,"Nov 29, 2001",20,m,right,"Jul 1, 2021","Jun 30, 2023",50000.0,Feyenoord, -
+3,4.0,Marcos Senesi,Centre-Back,"May 10, 1997",24,185,left,"Sep 2, 2019","Jun 30, 2023",12000000.0,Feyenoord, @senesimarcos
+4,18.0,Gernot Trauner,Centre-Back,"Mar 25, 1992",29,183,right,"Jul 26, 2021","Jun 30, 2025",4000000.0,Feyenoord, -
+5,13.0,Philippe Sandler,Centre-Back,"Feb 10, 1997",25,190,right,"Jan 31, 2022","Jun 30, 2022",2000000.0,Feyenoord, -
+6,25.0,Ramon Hendriks,Centre-Back,"Jul 18, 2001",20,189,left,"Jul 1, 2021","Jun 30, 2023",800000.0,Feyenoord, -
+7,5.0,Tyrell Malacia,Left-Back,"Aug 17, 1999",22,169,left,"Jul 1, 2017","Jun 30, 2024",10000000.0,Feyenoord, @sanroy42976595
+8,3.0,Lutsharel Geertruida,Right-Back,"Jul 18, 2000",21,184,right,"Jul 1, 2018","Jun 30, 2024",6000000.0,Feyenoord, @L8EGeertruida
+9,2.0,Marcus Holmgren Pedersen,Right-Back,"Jul 16, 2000",21,184,right,"Jul 1, 2021","Jun 30, 2026",4500000.0,Feyenoord, -
+10,32.0,Denzel Hall,Right-Back,"May 22, 2001",20,180,right,"Jul 1, 2021","Jun 30, 2024",100000.0,Feyenoord, -
+11,17.0,Fredrik Aursnes,Defensive Midfield,"Dec 10, 1995",26,181,right,"Aug 10, 2021","Jun 30, 2024",5000000.0,Feyenoord, @peacerich18
+12,6.0,Jorrit Hendrix,Defensive Midfield,"Feb 6, 1995",27,181,left,"Jan 26, 2022","Jun 30, 2023",1800000.0,Feyenoord, @JorritHendrix
+13,45.0,Lennard Hartjes,Defensive Midfield,"Apr 7, 2003",18,m,right,"Jul 1, 2021","Jun 30, 2023",100000.0,Feyenoord, -
+14,10.0,Orkun Kökcü,Central Midfield,"Dec 29, 2000",21,175,both,"Jul 1, 2018","Jun 30, 2025",14000000.0,Feyenoord, @OrkunKokcu
+15,26.0,Guus Til,Attacking Midfield,"Dec 22, 1997",24,186,right,"Jul 1, 2021","Jun 30, 2022",6500000.0,Feyenoord, -
+16,19.0,Cole Bassett,Attacking Midfield,"Jul 28, 2001",20,180,both,"Jan 20, 2022","Jun 30, 2023",6000000.0,Feyenoord, @colebassett19
+17,28.0,Jens Toornstra,Attacking Midfield,"Apr 4, 1989",32,178,right,"Aug 25, 2014","Jun 30, 2023",1500000.0,Feyenoord, @jenstoornstra
+18,48.0,Antoni Milambo,Attacking Midfield,"Apr 3, 2005",16,179,right,"Jul 1, 2021","Jun 30, 2024",1000000.0,Feyenoord, -
+19,7.0,Luis Sinisterra,Left Winger,"Jun 17, 1999",22,172,right,"Jul 8, 2018","Jun 30, 2024",16000000.0,Feyenoord, @Sinisterra29
+20,14.0,Reiss Nelson,Left Winger,"Dec 10, 1999",22,175,right,"Aug 31, 2021","Jun 30, 2022",7000000.0,Feyenoord, @ReissNelson9
+21,9.0,Alireza Jahanbakhsh,Right Winger,"Aug 11, 1993",28,180,right,"Jul 17, 2021","Jun 30, 2024",4000000.0,Feyenoord, @Alirezajb7
+22,23.0,Patrik Wålemark,Right Winger,"Oct 14, 2001",20,184,left,"Jan 17, 2022","Jun 30, 2026",3500000.0,Feyenoord, -
+23,33.0,Cyriel Dessers,Centre-Forward,"Dec 8, 1994",27,184,right,"Aug 31, 2021","Jun 30, 2022",3000000.0,Feyenoord, @CyrielDessers
+24,11.0,Bryan Linssen,Centre-Forward,"Oct 8, 1990",31,170,right,"Jul 6, 2020","Jun 30, 2023",2200000.0,Feyenoord, -
+0,34.0,Michael Verrips,Goalkeeper,"Dec 3, 1996",25,196,right,"Jan 11, 2022","Jun 30, 2022",900000.0,Fortuna Sittard, -
+1,1.0,Yanick van Osch,Goalkeeper,"Mar 24, 1997",24,183,right,"Jul 1, 2020","Jun 30, 2023",650000.0,Fortuna Sittard, -
+2,32.0,Felix Dornebusch,Goalkeeper,"Jul 12, 1994",27,193,right,"Jul 1, 2021","Jun 30, 2022",225000.0,Fortuna Sittard, -
+3,41.0,Tom Hendriks,Goalkeeper,"May 14, 2002",19,186,,"Jul 1, 2021","Jun 30, 2022",50000.0,Fortuna Sittard, -
+4,33.0,Dimitrios Siovas,Centre-Back,"Sep 16, 1988",33,191,left,"Jan 31, 2022","Jun 30, 2022",1500000.0,Fortuna Sittard, -
+5,2.0,Martin Angha,Centre-Back,"Jan 22, 1994",28,188,both,"Aug 26, 2019","Jun 30, 2022",700000.0,Fortuna Sittard, @MartinYAngha
+6,4.0,Roel Janssen,Centre-Back,"Jun 16, 1990",31,179,left,"Jul 1, 2020","Jun 30, 2023",300000.0,Fortuna Sittard, -
+7,18.0,Nigel Lonwijk,Centre-Back,"Oct 27, 2002",19,190,right,"Aug 31, 2021","Jun 30, 2022",300000.0,Fortuna Sittard, @NLonwijk
+8,35.0,George Cox,Left-Back,"Jan 14, 1998",24,171,left,"Jul 6, 2020","Jun 30, 2023",1000000.0,Fortuna Sittard, -
+9,27.0,Ronan Pluijmen,Left-Back,"Jun 26, 2003",18,173,left,"Jul 1, 2021",-,50000.0,Fortuna Sittard, -
+10,25.0,Mickaël Tirpan,Right-Back,"Oct 23, 1993",28,177,right,"Aug 27, 2021","Jun 30, 2024",800000.0,Fortuna Sittard, @MickaelTirpan
+11,12.0,Ivo Pinto,Right-Back,"Jan 7, 1990",32,182,right,"Aug 26, 2021","Jun 30, 2022",600000.0,Fortuna Sittard, @ivopinto6
+12,22.0,Andreas Samaris,Defensive Midfield,"Jun 13, 1989",32,189,right,"Nov 19, 2021","Jun 30, 2022",800000.0,Fortuna Sittard, -
+13,14.0,Tesfaldet Tekie,Central Midfield,"Jun 4, 1997",24,175,right,"Sep 9, 2019","Jun 30, 2022",850000.0,Fortuna Sittard, -
+14,6.0,Deroy Duarte,Central Midfield,"Jul 4, 1999",22,177,right,"Aug 12, 2021","Jun 30, 2024",650000.0,Fortuna Sittard, -
+15,23.0,Ben Rienstra,Central Midfield,"Jun 5, 1990",31,182,right,"Sep 1, 2020","Jun 30, 2023",300000.0,Fortuna Sittard, @BenRienstra
+16,28.0,Ryan Johansson,Central Midfield,"Feb 15, 2001",21,186,both,"Aug 13, 2021","Jun 30, 2022",100000.0,Fortuna Sittard, -
+17,8.0,Zian Flemming,Attacking Midfield,"Aug 1, 1998",23,185,right,"Aug 27, 2020","Jun 30, 2024",1200000.0,Fortuna Sittard, -
+18,10.0,Mats Seuntjens,Attacking Midfield,"Apr 17, 1992",29,187,right,"Aug 15, 2020","Jun 30, 2022",1200000.0,Fortuna Sittard, -
+19,19.0,Arianit Ferati,Attacking Midfield,"Sep 7, 1997",24,168,left,"Jul 29, 2021","Jun 30, 2023",350000.0,Fortuna Sittard, -
+20,29.0,Richie Musaba,Attacking Midfield,"Dec 6, 2000",21,177,right,"Sep 4, 2020","Jun 30, 2022",225000.0,Fortuna Sittard, -
+21,7.0,Lisandro Semedo,Right Winger,"Mar 12, 1996",25,175,right,"Jul 1, 2018","Jun 30, 2022",800000.0,Fortuna Sittard, -
+22,17.0,Jordan Botaka,Right Winger,"Jun 24, 1993",28,184,right,"Jan 28, 2022","Jun 30, 2022",700000.0,Fortuna Sittard, @BotakaJordan
+23,11.0,Paul Gladon,Centre-Forward,"Mar 18, 1992",29,188,right,"Feb 4, 2022","Jun 30, 2022",450000.0,Fortuna Sittard, -
+24,9.0,Charlison Benschop,Centre-Forward,"Aug 21, 1989",32,191,right,"Jan 31, 2022","Jun 30, 2023",400000.0,Fortuna Sittard, @cbenschop
+25,24.0,Samy Baghdadi,Centre-Forward,"Jul 11, 1997",24,189,right,"Aug 3, 2021","Jun 30, 2023",150000.0,Fortuna Sittard, -
+26,77.0,Tijjani Noslin,Centre-Forward,"Jul 7, 1999",22,m,,"Aug 11, 2021","Jun 30, 2024",125000.0,Fortuna Sittard, -
+0,23,Andries Noppert,Goalkeeper,"Apr 7, 1994",27,203,left,"Jan 22, 2021","Jun 30, 2022",125000.0,Go Ahead Eagles, -
+1,-,Nick Hengelman,Goalkeeper,"Nov 25, 1989",32,186,right,"Jan 31, 2022","Jun 30, 2022",75000.0,Go Ahead Eagles, @hengelmannick
+2,16,Sven Jansen,Goalkeeper,"Oct 23, 2004",17,192,right,"Jul 1, 2021",-,50000.0,Go Ahead Eagles, -
+3,31,Job Schuurman,Goalkeeper,"Jun 12, 1999",22,190,right,"Jul 1, 2021","Jun 30, 2022",50000.0,Go Ahead Eagles, @Jobschuurman
+4,3,Gerrit Nauber,Centre-Back,"Apr 13, 1992",29,186,right,"Jul 5, 2021","Jun 30, 2022",450000.0,Go Ahead Eagles, -
+5,4,Joris Kramer,Centre-Back,"Aug 2, 1996",25,187,left,"Jul 1, 2021","Jun 30, 2022",400000.0,Go Ahead Eagles, @JorisKramer_
+6,26,Justin Bakker,Centre-Back,"Mar 3, 1998",24,189,left,"Sep 10, 2020","Jun 30, 2022",300000.0,Go Ahead Eagles, @JustinBakker
+7,5,Bas Kuipers,Left-Back,"Aug 17, 1994",27,180,left,"Jul 6, 2020","Jun 30, 2024",500000.0,Go Ahead Eagles, -
+8,14,Turan Tuzlacik,Left-Back,"Mar 2, 2001",21,176,left,"Aug 27, 2021",-,50000.0,Go Ahead Eagles, -
+9,28,Aventis Aventisian,Left-Back,"Aug 17, 2002",19,172,left,"Jan 3, 2022","Jun 30, 2024",50000.0,Go Ahead Eagles, -
+10,2,Boyd Lucassen,Right-Back,"Jul 1, 1998",23,173,right,"Jul 1, 2019","Jun 30, 2022",450000.0,Go Ahead Eagles, -
+11,20,Mats Deijl,Right-Back,"Jul 15, 1997",24,181,right,"Jul 1, 2021","Jun 30, 2024",350000.0,Go Ahead Eagles, -
+12,15,Cuco Martina,Right-Back,"Sep 25, 1989",32,185,right,"Nov 26, 2021","Jun 30, 2022",300000.0,Go Ahead Eagles, @CucoMartina
+13,8,Luuk Brouwers,Defensive Midfield,"May 3, 1998",23,183,right,"Jul 1, 2020","Jun 30, 2023",750000.0,Go Ahead Eagles, -
+14,6,Jay Idzes,Defensive Midfield,"Jun 2, 2000",21,190,right,"Jul 20, 2020","Jun 30, 2023",375000.0,Go Ahead Eagles, -
+15,-,Evert Linthorst,Central Midfield,"Mar 3, 2000",22,185,right,"Jan 30, 2022","Jun 30, 2024",500000.0,Go Ahead Eagles, -
+16,-,Quiermo Dumay,Central Midfield,"Feb 10, 2001",21,181,right,"Aug 1, 2020",-,25000.0,Go Ahead Eagles, -
+17,10,Philippe Rommens,Attacking Midfield,"Aug 20, 1997",24,175,right,"Jul 1, 2021","Jun 30, 2023",500000.0,Go Ahead Eagles, -
+18,30,Giannis-Fivos Botos,Attacking Midfield,"Dec 20, 2000",21,172,right,"Jan 4, 2021","Jun 30, 2022",400000.0,Go Ahead Eagles, -
+19,-,Zakaria Eddahchouri,Attacking Midfield,"May 11, 2000",21,187,right,"Jul 1, 2019","Jun 30, 2022",200000.0,Go Ahead Eagles, -
+20,21,Iñigo Córdoba,Left Winger,"Mar 13, 1997",24,180,left,"Aug 31, 2021","Jun 30, 2022",1500000.0,Go Ahead Eagles, -
+21,19,Ogechika Heil,Left Winger,"Nov 27, 2000",21,168,right,"Jul 1, 2021","Jun 30, 2022",250000.0,Go Ahead Eagles, -
+22,17,Frank Ross,Left Winger,"Feb 18, 1998",24,172,both,"Aug 20, 2020","Jun 30, 2022",175000.0,Go Ahead Eagles, -
+23,11,Ragnar Oratmangoen,Right Winger,"Jan 21, 1998",24,180,right,"Jul 1, 2021","Jun 30, 2023",450000.0,Go Ahead Eagles, -
+24,7,Martijn Berden,Right Winger,"Jul 29, 1997",24,172,right,"Jul 1, 2019","Jun 30, 2024",250000.0,Go Ahead Eagles, -
+25,29,Marc Cardona,Centre-Forward,"Jul 8, 1995",26,183,right,"Jul 30, 2021","Jun 30, 2022",600000.0,Go Ahead Eagles, -
+26,9,Isac Lidberg,Centre-Forward,"Sep 8, 1998",23,187,right,"Jul 16, 2021","Jun 30, 2023",200000.0,Go Ahead Eagles, -
+27,27,Jacob Mulenga,Centre-Forward,"Feb 12, 1984",38,185,right,"Oct 8, 2020","Jun 30, 2022",175000.0,Go Ahead Eagles, @JakobMulenga
+28,18,Sam Crowther,Centre-Forward,"Apr 3, 2000",21,194,right,"Jul 1, 2020","Jun 30, 2022",50000.0,Go Ahead Eagles, -
+0,1.0,Janis Blaswich,Goalkeeper,"May 2, 1991",30,193,right,"Jul 1, 2018","Jun 30, 2022",800000.0,Heracles, -
+1,26.0,Koen Bucker,Goalkeeper,"Jun 18, 1996",25,198,right,"Jul 31, 2018","Jun 30, 2023",100000.0,Heracles, @koenbucker
+2,28.0,Robin Jalving,Goalkeeper,"Apr 11, 2000",21,190,right,"Jul 1, 2021","Jun 30, 2023",50000.0,Heracles, -
+3,21.0,Justin Hoogma,Centre-Back,"Jun 11, 1998",23,190,left,"Jan 24, 2022","Jun 30, 2026",1500000.0,Heracles, -
+4,13.0,Mats Knoester,Centre-Back,"Nov 19, 1998",23,188,left,"Jan 17, 2019","Jun 30, 2022",1000000.0,Heracles, @KnoesterMats
+5,5.0,Marco Rente,Centre-Back,"Feb 25, 1997",25,187,right,"Aug 3, 2020","Jun 30, 2023",650000.0,Heracles, -
+6,4.0,Sven Sonnenberg,Centre-Back,"Jan 19, 1999",23,194,right,"Aug 2, 2021","Jun 30, 2024",275000.0,Heracles, -
+7,24.0,Elias Oubella,Centre-Back,"May 24, 2001",20,187,right,"Oct 5, 2020","Jun 30, 2022",75000.0,Heracles, -
+8,22.0,Mateo Les,Centre-Back,"Mar 25, 2000",21,189,,"Sep 15, 2020","Jun 30, 2023",50000.0,Heracles, -
+9,3.0,Giacomo Quagliata,Left-Back,"Feb 19, 2000",22,177,left,"Jan 31, 2020","Jun 30, 2022",700000.0,Heracles, -
+10,12.0,Ruben Roosken,Left-Back,"Mar 2, 2000",22,183,left,"Jul 1, 2021","Jun 30, 2024",225000.0,Heracles, -
+11,23.0,Noah Fadiga,Right-Back,"Dec 3, 1999",22,187,both,"Jul 20, 2020","Jun 30, 2023",750000.0,Heracles, @noahfadiga
+12,19.0,Navajo Bakboord,Right-Back,"Jan 29, 1999",23,177,right,"Jul 1, 2019","Jun 30, 2022",350000.0,Heracles, -
+13,25.0,Robin Polley,Right-Back,"Dec 28, 1998",23,183,right,"Aug 5, 2021","Jun 30, 2024",125000.0,Heracles, @rpolley25
+14,6.0,Orestis Kiomourtzoglou,Defensive Midfield,"May 7, 1998",23,188,right,"Jul 1, 2019","Jun 30, 2023",900000.0,Heracles, @orestiskio
+15,15.0,Lucas Schoofs,Defensive Midfield,"Jan 3, 1997",25,186,right,"Sep 2, 2019","Jun 30, 2024",650000.0,Heracles, -
+16,32.0,Sem Scheperman,Defensive Midfield,"Jun 24, 2002",19,188,,"Mar 4, 2022","Jun 30, 2023",650000.0,Heracles, -
+17,14.0,Luca de la Torre,Central Midfield,"May 23, 1998",23,177,right,"Aug 6, 2020","Jun 30, 2022",900000.0,Heracles, @delatorreluca
+18,8.0,Elias Sierra,Central Midfield,"Aug 25, 2001",20,170,right,"Feb 1, 2021","Jun 30, 2024",400000.0,Heracles, -
+19,31.0,Rohat Agca,Central Midfield,"Sep 3, 2001",20,182,right,"Sep 1, 2020","Jun 30, 2022",100000.0,Heracles, -
+20,10.0,Rai Vloet,Attacking Midfield,"May 8, 1995",26,188,right,"Jul 1, 2020","Jun 30, 2023",1000000.0,Heracles, @RaiVloet
+21,27.0,Melih Ibrahimoglu,Attacking Midfield,"Jul 17, 2000",21,175,both,"Jan 29, 2021","Jun 30, 2024",450000.0,Heracles, -
+22,30.0,Anas Ouahim,Attacking Midfield,"Sep 23, 1997",24,175,right,"Jan 31, 2022","Jun 30, 2024",350000.0,Heracles, @anasouahim
+23,29.0,Emil Hansson,Left Winger,"Jun 15, 1998",23,172,right,"Jan 29, 2022","Jun 30, 2024",700000.0,Heracles, -
+24,7.0,Bilal Basacikoglu,Left Winger,"Mar 26, 1995",26,179,right,"Jul 1, 2021","Jun 30, 2023",500000.0,Heracles, @Basacikoglu_
+25,18.0,Ismail Azzaoui,Right Winger,"Jan 6, 1998",24,177,right,"Oct 27, 2020","Jun 30, 2022",650000.0,Heracles, @ismailazzaoui
+26,11.0,Nikolai Laursen,Right Winger,"Feb 19, 1998",24,183,right,"Jul 1, 2021","Jun 30, 2024",500000.0,Heracles, @nikolai_laursen
+27,20.0,Kasper Lunding,Right Winger,"Jul 17, 1999",22,178,left,"Oct 5, 2020","Jun 30, 2023",350000.0,Heracles, -
+28,16.0,Kaj Sierhuis,Centre-Forward,"Apr 27, 1998",23,180,right,"Aug 31, 2021","Jun 30, 2022",2300000.0,Heracles, @KSierhuis9
+29,33.0,Samuel Armenteros,Centre-Forward,"May 27, 1990",31,178,left,"Jan 31, 2022","Jun 30, 2022",700000.0,Heracles, @SamArmenteros
+30,9.0,Sinan Bakis,Centre-Forward,"Apr 22, 1994",27,188,right,"Jul 21, 2020","Jun 30, 2023",600000.0,Heracles, -
+31,17.0,Adrián Szőke,Centre-Forward,"Jul 1, 1998",23,186,right,"Jul 7, 2019","Jun 30, 2022",350000.0,Heracles, -
+0,1.0,Mattijs Branderhorst,Goalkeeper,"Dec 31, 1993",28,192,right,"Jul 1, 2019","Jun 30, 2023",450000.0,NEC, -
+1,27.0,Danny Vukovic,Goalkeeper,"Mar 27, 1985",36,187,right,"Jul 1, 2021","Jun 30, 2023",300000.0,NEC, @vuka20
+2,31.0,Robin Roefs,Goalkeeper,"Jan 17, 2003",19,193,left,"Jul 1, 2021","Jun 30, 2024",75000.0,NEC, -
+3,26.0,Cas Odenthal,Centre-Back,"Sep 26, 2000",21,190,right,"Jul 1, 2019","Jun 30, 2022",550000.0,NEC, -
+4,5.0,Rodrigo Guth,Centre-Back,"Nov 10, 2000",21,191,right,"Jul 20, 2021","Jun 30, 2022",500000.0,NEC, -
+5,4.0,Iván Márquez,Centre-Back,"Jun 9, 1994",27,191,right,"Jul 19, 2021","Jun 30, 2023",450000.0,NEC, @IvaanMaarqueez
+6,3.0,Rens van Eijden,Centre-Back,"Mar 3, 1988",34,188,right,"Aug 3, 2018","Jun 30, 2022",200000.0,NEC, @Rens_Van_Eijden
+7,16.0,Souffian El Karouani,Left-Back,"Oct 19, 2000",21,178,right,"Jul 1, 2019","Jun 30, 2023",800000.0,NEC, -
+8,24.0,Calvin Verdonk,Left-Back,"Apr 26, 1997",24,174,left,"Aug 30, 2021","Jun 30, 2022",700000.0,NEC, -
+9,28.0,Bart van Rooij,Right-Back,"May 26, 2001",20,174,right,"Jul 1, 2019","Jun 30, 2023",600000.0,NEC, -
+10,2.0,Ilias Bronkhorst,Right-Back,"May 10, 1997",24,185,right,"Jul 1, 2021","Jun 30, 2023",350000.0,NEC, -
+11,71.0,Dirk Proper,Defensive Midfield,"Feb 24, 2002",20,167,right,"Jan 6, 2020","Jun 30, 2023",900000.0,NEC, -
+12,20.0,Lasse Schöne,Defensive Midfield,"May 27, 1986",35,178,right,"Jul 1, 2021","Jun 30, 2023",350000.0,NEC, @LasseSchone_
+13,15.0,Javier Vet,Defensive Midfield,"Sep 9, 1993",28,194,right,"Sep 29, 2020","Jun 30, 2022",325000.0,NEC, -
+14,8.0,Édgar Barreto,Central Midfield,"Jul 15, 1984",37,180,right,"Jul 15, 2020","Jun 30, 2022",250000.0,NEC, -
+15,18.0,Mathias De Wolf,Central Midfield,"Feb 21, 2002",20,187,left,"Jul 9, 2020","Jun 30, 2023",125000.0,NEC, -
+16,6.0,Jordy Bruijn,Attacking Midfield,"Jul 23, 1996",25,171,right,"Jul 1, 2020","Jun 30, 2023",800000.0,NEC, -
+17,11.0,Magnus Mattsson,Left Winger,"Feb 25, 1999",23,174,both,"Jul 1, 2021","Jun 30, 2024",700000.0,NEC, -
+18,14.0,Mikkel Duelund,Left Winger,"Jun 29, 1997",24,178,both,"Jul 1, 2021","Jun 30, 2022",700000.0,NEC, @MikkelDuelund22
+19,22.0,Joep van der Sluijs,Left Winger,"Dec 1, 2001",20,180,left,"Jul 1, 2020","Jun 30, 2023",200000.0,NEC, -
+20,7.0,Elayis Tavsan,Right Winger,"Apr 30, 2001",20,183,left,"Jul 1, 2020","Jun 30, 2023",800000.0,NEC, @ElayisTavsan
+21,10.0,Jonathan Okita,Right Winger,"Oct 5, 1996",25,181,right,"Aug 24, 2018","Jun 30, 2022",700000.0,NEC, @Okitajr10
+22,9.0,Ali Akman,Centre-Forward,"Apr 18, 2002",19,173,right,"Aug 4, 2021","Jun 30, 2022",1500000.0,NEC, @AliAkman_18
+23,12.0,Wilfried Bony,Centre-Forward,"Dec 10, 1988",33,183,right,"Jan 26, 2022","Jun 30, 2022",700000.0,NEC, @wilfriedbony
+24,19.0,Pedro Ruiz,Centre-Forward,"Mar 30, 2000",21,198,left,"Aug 27, 2021","Jun 30, 2023",250000.0,NEC, -
+0,1,Konstantinos Lamprou,Goalkeeper,"Sep 18, 1991",30,178,left,"Jul 1, 2021","Jun 30, 2023",550000.0,PEC Zwolle, @koslamprou
+1,16,Jasper Schendelaar,Goalkeeper,"Sep 2, 2000",21,186,right,"Jul 1, 2021","Jun 30, 2023",350000.0,PEC Zwolle, -
+2,40,Mike Hauptmeijer,Goalkeeper,"Mar 18, 1997",24,190,left,"Jul 1, 2016","Jun 30, 2023",100000.0,PEC Zwolle, -
+3,4,Yuta Nakayama,Centre-Back,"Feb 16, 1997",25,181,left,"Jan 15, 2019","Jun 30, 2022",650000.0,PEC Zwolle, @Nkymyt
+4,15,Sam Kersten,Centre-Back,"Jan 30, 1998",24,191,right,"Jul 10, 2019","Jun 30, 2024",650000.0,PEC Zwolle, @SamKersten1
+5,3,Siemen Voet,Centre-Back,"Feb 3, 2000",22,190,left,"Jul 1, 2021","Jun 30, 2023",400000.0,PEC Zwolle, @siemen_voet
+6,30,Maikel van der Werff,Centre-Back,"Apr 22, 1989",32,186,right,"Jan 21, 2022","Jun 30, 2022",350000.0,PEC Zwolle, -
+7,2,Bram van Polen,Centre-Back,"Oct 11, 1985",36,179,right,"Jul 1, 2007","Jun 30, 2022",200000.0,PEC Zwolle, -
+8,33,Rav van den Berg,Centre-Back,"Jul 7, 2004",17,190,left,"Jan 1, 2021","Jun 30, 2024",200000.0,PEC Zwolle, -
+9,22,Daijiro Chirino,Centre-Back,"Jan 24, 2002",20,m,,"Jul 1, 2021","Jun 30, 2022",25000.0,PEC Zwolle, -
+10,5,Kenneth Paal,Left-Back,"Jun 24, 1997",24,174,left,"Jul 1, 2019","Jun 30, 2022",750000.0,PEC Zwolle, @Kennethpaal1
+11,34,Mees de Wit,Left-Back,"Apr 17, 1998",23,181,left,"Jul 6, 2021","Jun 30, 2023",550000.0,PEC Zwolle, @Mees98_
+12,31,Sai van Wermeskerken,Right-Back,"Jun 28, 1994",27,178,right,"Jul 9, 2019","Jun 30, 2023",900000.0,PEC Zwolle, @saivw31
+13,21,Djavan Anderson,Right-Back,"Apr 21, 1995",26,178,right,"Jan 31, 2022","Jun 30, 2022",400000.0,PEC Zwolle, @DjavanAnderson
+14,13,Rico Strieder,Defensive Midfield,"Jul 6, 1992",29,174,right,"Jul 1, 2020","Jun 30, 2022",500000.0,PEC Zwolle, -
+15,20,Thomas van den Belt,Defensive Midfield,"Jun 18, 2001",20,181,right,"Jul 1, 2020","Jun 30, 2022",400000.0,PEC Zwolle, -
+16,18,Gabi Caschili,Defensive Midfield,"Jul 14, 2003",18,m,right,"Dec 1, 2021","Jun 30, 2022",50000.0,PEC Zwolle, @GabiCaschili
+17,10,Pelle Clement,Central Midfield,"May 19, 1996",25,177,right,"Jan 3, 2019","Jun 30, 2022",700000.0,PEC Zwolle, @PelleC_
+18,6,Mustafa Saymak,Central Midfield,"Feb 11, 1993",29,169,right,"Aug 23, 2019","Jun 30, 2022",550000.0,PEC Zwolle, @MustafaSaymak
+19,8,Dean Huiberts,Central Midfield,"May 4, 2000",21,186,right,"Jul 1, 2019","Jun 30, 2025",500000.0,PEC Zwolle, -
+20,37,Ryan Koolwijk,Central Midfield,"Aug 8, 1985",36,193,left,"Sep 15, 2021","Jun 30, 2022",200000.0,PEC Zwolle, @RyanKoolwijk
+21,-,Samir Lagsir,Attacking Midfield,"May 20, 2003",18,180,right,"Jan 1, 2021","Jun 30, 2024",150000.0,PEC Zwolle, -
+22,11,Luka Adzic,Left Winger,"Sep 17, 1998",23,184,right,"Aug 31, 2021","Jun 30, 2022",650000.0,PEC Zwolle, -
+23,7,Gervane Kastaneer,Left Winger,"Jun 9, 1996",25,189,right,"Jul 22, 2021","Jun 30, 2023",250000.0,PEC Zwolle, -
+24,45,Chardi Landu,Left Winger,"Jul 18, 2000",21,175,right,"Jul 1, 2021","Jun 30, 2024",100000.0,PEC Zwolle, -
+25,23,Eliano Reijnders,Right Winger,"Oct 23, 2000",21,168,right,"Jul 1, 2020","Jun 30, 2025",450000.0,PEC Zwolle,-
+26,47,Jarno Westerman,Right Winger,"Jun 8, 2002",19,183,right,"Jul 1, 2020","Jun 30, 2022",200000.0,PEC Zwolle, -
+27,9,Slobodan Tedic,Centre-Forward,"Apr 13, 2000",21,190,both,"Sep 1, 2020","Jun 30, 2022",1000000.0,PEC Zwolle, -
+28,19,Daishawn Redan,Centre-Forward,"Feb 2, 2001",21,176,right,"Aug 31, 2021","Jun 30, 2022",1000000.0,PEC Zwolle, -
+29,22,Max de Waal,Centre-Forward,"Jan 10, 2002",20,184,right,"Jan 4, 2022","Jun 30, 2022",850000.0,PEC Zwolle, -
+30,29,Oussama Darfalou,Centre-Forward,"Sep 29, 1993",28,187,right,"Jan 3, 2022","Jun 30, 2022",800000.0,PEC Zwolle, -
+0,16.0,Joël Drommel,Goalkeeper,"Nov 16, 1996",25,192,right,"Jul 1, 2021","Jun 30, 2026",4500000.0,PSV, -
+1,38.0,Yvon Mvogo,Goalkeeper,"Jun 6, 1994",27,189,right,"Aug 25, 2020","Jun 30, 2022",2500000.0,PSV, @YMvogo
+2,13.0,Vincent Müller,Goalkeeper,"Aug 23, 2000",21,190,right,"Sep 23, 2020","Jun 30, 2023",300000.0,PSV, -
+3,21.0,Maxime Delanghe,Goalkeeper,"May 23, 2001",20,189,right,"Sep 25, 2020","Jun 30, 2023",300000.0,PSV, @MaximeDelanghe
+4,18.0,Olivier Boscagli,Centre-Back,"Nov 18, 1997",24,181,left,"Jul 17, 2019","Jun 30, 2025",7500000.0,PSV, @OlivierBoscagli
+5,3.0,Jordan Teze,Centre-Back,"Sep 30, 1999",22,183,right,"Dec 21, 2019","Jun 30, 2024",5000000.0,PSV, -
+6,5.0,André Ramalho,Centre-Back,"Feb 16, 1992",30,182,both,"Jul 1, 2021","Jun 30, 2024",3500000.0,PSV, -
+7,4.0,Armando Obispo,Centre-Back,"Mar 5, 1999",23,185,left,"Jul 1, 2017","Jun 30, 2025",3000000.0,PSV, @ArmandoObispo
+8,31.0,Philipp Max,Left-Back,"Sep 30, 1993",28,177,left,"Sep 2, 2020","Jun 30, 2024",8000000.0,PSV, -
+9,17.0,Mauro Júnior,Left-Back,"May 6, 1999",22,171,left,"Jan 1, 2018","Jun 30, 2025",3000000.0,PSV, -
+10,29.0,Phillipp Mwene,Right-Back,"Jan 29, 1994",28,170,right,"Jul 1, 2021","Jun 30, 2024",3000000.0,PSV, -
+11,6.0,Ibrahim Sangaré,Defensive Midfield,"Dec 2, 1997",24,191,right,"Sep 28, 2020","Jun 30, 2025",14000000.0,PSV, -
+12,23.0,Joey Veerman,Defensive Midfield,"Nov 19, 1998",23,185,right,"Jan 4, 2022","Jun 30, 2026",6000000.0,PSV, @JoeyVeerman
+13,15.0,Érick Gutiérrez,Central Midfield,"Jun 15, 1995",26,177,left,"Aug 30, 2018","Jun 30, 2023",3500000.0,PSV, @GutiGalaviz
+14,30.0,Ryan Thomas,Central Midfield,"Dec 20, 1994",27,174,right,"Aug 10, 2018","Jun 30, 2022",3000000.0,PSV, -
+15,8.0,Marco van Ginkel,Central Midfield,"Dec 1, 1992",29,186,right,"Jul 1, 2021","Jun 30, 2023",1750000.0,PSV, -
+16,27.0,Mario Götze,Attacking Midfield,"Jun 3, 1992",29,176,right,"Oct 6, 2020","Jun 30, 2024",12000000.0,PSV, @MarioGoetze
+17,37.0,Richard Ledezma,Attacking Midfield,"Sep 6, 2000",21,174,right,"Jul 1, 2021","Jun 30, 2024",850000.0,PSV, @richydezma
+18,11.0,Cody Gakpo,Left Winger,"May 7, 1999",22,189,right,"Jul 1, 2018","Jun 30, 2026",22000000.0,PSV, @cody_gakpo
+19,19.0,Bruma,Left Winger,"Oct 24, 1994",27,173,right,"Jul 1, 2019","Jun 30, 2023",5000000.0,PSV, @jeffreybruma
+20,10.0,Noni Madueke,Right Winger,"Mar 10, 2002",19,182,left,"Mar 14, 2020","Jun 30, 2025",18000000.0,PSV, @NoniMadueke_
+21,25.0,Ritsu Doan,Right Winger,"Jun 16, 1998",23,172,left,"Aug 30, 2019","Jun 30, 2024",6500000.0,PSV, @doan_ritsu
+22,9.0,Carlos Vinícius,Centre-Forward,"Mar 25, 1995",26,190,left,"Aug 31, 2021","Jun 30, 2022",12000000.0,PSV, -
+23,32.0,Yorbe Vertessen,Centre-Forward,"Jan 8, 2001",21,176,right,"Jan 1, 2021","Jun 30, 2025",3500000.0,PSV, @yorbe_vertessen
+24,20.0,Maximiliano Romero,Centre-Forward,"Jan 9, 1999",23,179,right,"Jan 1, 2018","Jun 30, 2023",3000000.0,PSV, -
+25,7.0,Eran Zahavi,Centre-Forward,"Jul 25, 1987",34,180,both,"Sep 20, 2020","Jun 30, 2022",1500000.0,PSV, @EranZahavi
+0,1.0,Etienne Vaessen,Goalkeeper,"Jul 26, 1995",26,189,right,"Jul 1, 2015","Jun 30, 2024",450000.0,RKC Waalwijk, @Evaessen01
+1,21.0,Joel Pereira,Goalkeeper,"Jun 28, 1996",25,189,right,"Jul 5, 2021","Jun 30, 2022",300000.0,RKC Waalwijk, @ElgatoPereira1
+2,13.0,Mark Spenkelink,Goalkeeper,"Jan 27, 1997",25,196,,"Jan 31, 2022","Jun 30, 2022",100000.0,RKC Waalwijk, @MarkSpenk_nr1
+3,31.0,Issam El Maach,Goalkeeper,"Feb 1, 2000",22,187,right,"Jul 14, 2021","Jun 30, 2022",75000.0,RKC Waalwijk, @IElmaach
+4,59.0,Ahmed Touba,Centre-Back,"Mar 13, 1998",23,190,left,"Aug 29, 2020","Jun 30, 2023",1000000.0,RKC Waalwijk, -
+5,3.0,Melle Meulensteen,Centre-Back,"Jul 4, 1999",22,188,right,"Jan 24, 2018","Jun 30, 2024",700000.0,RKC Waalwijk, -
+6,24.0,Dario van den Buijs,Centre-Back,"Sep 12, 1995",26,188,left,"Aug 30, 2021","Jun 30, 2025",500000.0,RKC Waalwijk, @DarioVandenBuys
+7,4.0,Shawn Adewoye,Centre-Back,"Jun 29, 2000",21,183,right,"Jan 31, 2021","Jun 30, 2023",250000.0,RKC Waalwijk, -
+8,15.0,Lars Nieuwpoort,Centre-Back,"Oct 29, 1994",27,189,left,"Jul 22, 2019","Jun 30, 2023",250000.0,RKC Waalwijk, -
+9,28.0,Alexander Büttner,Left-Back,"Feb 11, 1989",33,174,left,"Jul 12, 2021","Jun 30, 2022",500000.0,RKC Waalwijk, @AlexButtner_28
+10,5.0,Thierry Lutonda,Left-Back,"Oct 27, 2000",21,167,left,"Jul 1, 2021","Jun 30, 2024",300000.0,RKC Waalwijk, -
+11,34.0,Luuk Wouters,Left-Back,"Jun 8, 1999",22,190,left,"Jul 1, 2020",-,250000.0,RKC Waalwijk, -
+12,2.0,Juriën Gaari,Right-Back,"Dec 23, 1993",28,181,right,"Jul 1, 2018","Jun 30, 2022",300000.0,RKC Waalwijk, -
+13,6.0,Vurnon Anita,Defensive Midfield,"Apr 4, 1989",32,169,right,"Aug 31, 2020","Jun 30, 2022",450000.0,RKC Waalwijk, @Vurnon
+14,8.0,Ayman Azhil,Central Midfield,"Apr 10, 2001",20,170,,"Aug 31, 2020","Jun 30, 2022",300000.0,RKC Waalwijk, -
+15,14.0,Achraf El Bouchataoui,Central Midfield,"Jan 12, 2000",22,179,right,"Aug 12, 2021","Jun 30, 2022",250000.0,RKC Waalwijk, -
+16,12.0,Hans Mulder,Central Midfield,"Apr 27, 1987",34,180,right,"Oct 4, 2017","Jun 30, 2022",175000.0,RKC Waalwijk, -
+17,26.0,Sebbe Augustijns,Central Midfield,"Sep 3, 1999",22,179,right,"Jul 1, 2020","Jun 30, 2023",75000.0,RKC Waalwijk, -
+18,33.0,Yassin Oukili,Central Midfield,"Jan 3, 2001",21,195,right,"Jan 20, 2021","Jun 30, 2023",50000.0,RKC Waalwijk, -
+19,11.0,Iliass Bel Hassani,Attacking Midfield,"Sep 16, 1992",29,175,left,"Jul 1, 2021","Jun 30, 2022",400000.0,RKC Waalwijk, @IliasBelHassani
+20,10.0,Richard van der Venne,Attacking Midfield,"May 16, 1992",29,173,left,"Jan 20, 2020","Jun 30, 2022",350000.0,RKC Waalwijk, -
+21,22.0,Saïd Bakari,Left Winger,"Sep 22, 1994",27,178,right,"Jul 1, 2017","Jun 30, 2023",500000.0,RKC Waalwijk, -
+22,20.0,Lennerd Daneels,Left Winger,"Apr 10, 1998",23,172,right,"Jul 1, 2019","Jun 30, 2023",350000.0,RKC Waalwijk, @lennerddaneels
+23,17.0,Roy Kuijpers,Right Winger,"Jan 17, 2000",22,175,right,"Dec 2, 2021","Jun 30, 2025",350000.0,RKC Waalwijk, -
+24,7.0,Jens Odgaard,Centre-Forward,"Mar 31, 1999",22,188,left,"Jul 24, 2021","Jun 30, 2022",1300000.0,RKC Waalwijk, -
+25,9.0,Finn Stokkers,Centre-Forward,"Apr 18, 1996",25,180,right,"Sep 11, 2020","Jun 30, 2022",450000.0,RKC Waalwijk, -
+26,29.0,Michiel Kramer,Centre-Forward,"Dec 3, 1988",33,196,right,"Jul 20, 2021","Jun 30, 2023",350000.0,RKC Waalwijk, @kramerinho
+27,27.0,David Min,Centre-Forward,"Jun 23, 1999",22,194,right,"Jul 1, 2020","Jun 30, 2023",75000.0,RKC Waalwijk, -
+0,1.0,Sonny Stevens,Goalkeeper,"Jun 22, 1992",29,194,right,"Jul 23, 2019","Jun 30, 2022",500000.0,sc SC Cambuur, -
+1,12.0,Pieter Bos,Goalkeeper,"Feb 23, 1997",25,193,right,"Jul 1, 2016","Jun 30, 2023",50000.0,sc SC Cambuur, -
+2,31.0,Brett Minnema,Goalkeeper,"Jan 6, 2002",20,192,,"Jul 1, 2020","Jun 30, 2023",25000.0,sc SC Cambuur, @MinnemaBrett
+3,15.0,Marco Tol,Centre-Back,"Apr 25, 1998",23,188,right,"Jul 1, 2021","Jun 30, 2024",500000.0,sc SC Cambuur, -
+4,3.0,Calvin Mac-Intosch,Centre-Back,"Aug 9, 1989",32,181,right,"Jul 1, 2019","Jun 30, 2023",325000.0,sc SC Cambuur, -
+5,4.0,Erik Schouten,Centre-Back,"Aug 16, 1991",30,182,both,"Jul 12, 2019","Jun 30, 2022",325000.0,sc SC Cambuur, -
+6,33.0,Jhondly van der Meer,Centre-Back,"Mar 22, 2002",19,183,right,"Jul 1, 2021","Jun 30, 2023",50000.0,sc SC Cambuur, -
+7,16.0,Alex Bangura,Left-Back,"Jul 13, 1999",22,183,left,"Jul 1, 2019","Jun 30, 2023",700000.0,sc SC Cambuur, -
+8,23.0,Maxim Gullit,Left-Back,"May 20, 2001",20,191,left,"Aug 27, 2021","Jun 30, 2023",500000.0,sc SC Cambuur, -
+9,18.0,David Sambissa,Left-Back,"Jan 11, 1996",26,177,left,"Jul 1, 2018","Jun 30, 2022",350000.0,sc SC Cambuur, @DavidSambissa
+10,27.0,Sekou Sylla,Left-Back,"Jan 9, 1999",23,180,left,"Jan 7, 2022","Jun 30, 2023",25000.0,sc SC Cambuur, -
+11,5.0,Doke Schmidt,Right-Back,"Apr 7, 1992",29,177,right,"Jul 23, 2019","Jun 30, 2022",350000.0,sc SC Cambuur, -
+12,2.0,Jasper ter Heide,Right-Back,"Mar 29, 1999",22,173,right,"Jul 7, 2020","Jun 30, 2022",225000.0,sc SC Cambuur, -
+13,6.0,Mees Hoedemakers,Defensive Midfield,"Feb 18, 1998",24,181,both,"Jul 1, 2020","Jun 30, 2023",1000000.0,sc SC Cambuur, @mees_146
+14,8.0,Jamie Jacobs,Central Midfield,"Dec 3, 1997",24,182,left,"Jul 1, 2019","Jun 30, 2022",900000.0,sc SC Cambuur, -
+15,20.0,Robin Maulun,Attacking Midfield,"Nov 23, 1996",25,176,right,"Jul 1, 2018","Jun 30, 2023",650000.0,sc SC Cambuur, @RobinMaulun
+16,10.0,Mitchel Paulissen,Attacking Midfield,"Apr 21, 1993",28,183,right,"Jul 1, 2019","Jun 30, 2023",400000.0,sc SC Cambuur, -
+17,11.0,Patrick Joosten,Left Winger,"Apr 14, 1996",25,177,right,"Jan 11, 2022","Jun 30, 2022",800000.0,sc SC Cambuur, -
+18,7.0,Issa Kallon,Left Winger,"Jan 3, 1996",26,170,right,"Aug 14, 2017","Jun 30, 2022",650000.0,sc SC Cambuur, -
+19,21.0,Tamás Kiss,Left Winger,"Nov 24, 2000",21,167,right,"Aug 16, 2021","Jun 30, 2022",550000.0,sc SC Cambuur, -
+20,14.0,Michael Breij,Right Winger,"Jan 15, 1997",25,181,right,"Jan 1, 2020","Jun 30, 2024",500000.0,sc SC Cambuur, @BreijMichael
+21,17.0,Nick Doodeman,Right Winger,"Oct 22, 1996",25,173,right,"Feb 1, 2021","Jun 30, 2023",500000.0,sc SC Cambuur, @NickDoodeman
+22,28.0,Roberts Uldrikis,Centre-Forward,"Apr 3, 1998",23,198,right,"Aug 31, 2021","Jun 30, 2023",700000.0,sc SC Cambuur, -
+23,9.0,Tom Boere,Centre-Forward,"Nov 24, 1992",29,183,right,"Jul 1, 2021","Jun 30, 2023",250000.0,sc SC Cambuur, -
+0,1.0,Erwin Mulder,Goalkeeper,"Mar 3, 1989",33,193,right,"Jul 31, 2020","Jun 30, 2022",600000.0,SC Heerenveen, -
+1,22.0,Xavier Mous,Goalkeeper,"Aug 4, 1995",26,188,right,"Jul 1, 2021","Jun 30, 2023",500000.0,SC Heerenveen, -
+2,23.0,Jan Bekkema,Goalkeeper,"Apr 9, 1996",25,186,right,"Jul 1, 2020","Jun 30, 2023",50000.0,SC Heerenveen, @nljanneman
+3,24.0,Jaimy Kroesen,Goalkeeper,"Mar 27, 2003",18,184,right,"Jul 1, 2020","Jun 30, 2022",50000.0,SC Heerenveen, -
+4,25.0,Pawel Bochniewicz,Centre-Back,"Jan 30, 1996",26,194,left,"Sep 10, 2020","Jun 30, 2023",2200000.0,SC Heerenveen, @pbochniewicz5
+5,14.0,Ibrahim Dresevic,Centre-Back,"Jan 24, 1997",25,186,right,"Jan 31, 2019","Jun 30, 2022",1000000.0,SC Heerenveen, -
+6,3.0,Joost van Aken,Centre-Back,"May 13, 1994",27,193,left,"Feb 7, 2022","Jun 30, 2022",700000.0,SC Heerenveen, @JoostvAkenProf
+7,4.0,Sven van Beek,Centre-Back,"Jul 28, 1994",27,189,right,"Jul 19, 2021","Jun 30, 2023",650000.0,SC Heerenveen, @svenvanbeek16
+8,15.0,Nick Bakker,Centre-Back,"Jul 21, 1992",29,189,left,"Sep 6, 2021","Jun 30, 2022",400000.0,SC Heerenveen, -
+9,2.0,Syb van Ottele,Centre-Back,"Feb 2, 2002",20,185,both,"Jan 8, 2021","Jun 30, 2024",250000.0,SC Heerenveen, -
+10,34.0,Timo Zaal,Centre-Back,"Feb 9, 2004",18,m,right,"Jul 1, 2021","Jun 30, 2023",100000.0,SC Heerenveen, -
+11,5.0,Lucas Woudenberg,Left-Back,"Apr 25, 1994",27,186,left,"Aug 1, 2017","Jun 30, 2022",750000.0,SC Heerenveen, @LucasWoudenberg
+12,13.0,Rami Kaib,Left-Back,"May 8, 1997",24,178,,"Jan 13, 2021","Jun 30, 2024",650000.0,SC Heerenveen, @Rkaib
+13,27.0,Milan van Ewijk,Right-Back,"Sep 8, 2000",21,175,right,"Jul 1, 2021","Jun 30, 2025",1000000.0,SC Heerenveen, -
+14,18.0,Hamdi Akujobi,Right-Back,"Jan 20, 2000",22,175,right,"Jul 1, 2019","Jun 30, 2022",200000.0,SC Heerenveen, @hamdi_akujobi
+15,10.0,Tibor Halilovic,Defensive Midfield,"Mar 18, 1995",26,176,right,"Jan 11, 2021","Jun 30, 2024",1300000.0,SC Heerenveen, @AkumoSch
+16,33.0,Thom Haye,Defensive Midfield,"Feb 9, 1995",27,187,right,"Jan 31, 2022","Jun 30, 2024",900000.0,SC Heerenveen, @ThomHaye_
+17,29.0,Nicolas Madsen,Defensive Midfield,"Mar 17, 2000",21,m,right,"Aug 31, 2021","Jun 30, 2022",800000.0,SC Heerenveen, @NicolasMadsen43
+18,26.0,Anas Tahiri,Central Midfield,"May 15, 1995",26,179,right,"Jan 7, 2022","Jun 30, 2024",500000.0,SC Heerenveen, -
+19,19.0,Jan Ras,Central Midfield,"Jan 28, 1999",23,174,right,"Jul 1, 2019","Jun 30, 2022",75000.0,SC Heerenveen, -
+20,35.0,Djenahro Nunumete,Central Midfield,"Jan 28, 2002",20,m,left,"Jul 1, 2021","Jun 30, 2022",50000.0,SC Heerenveen, -
+21,6.0,Siem de Jong,Attacking Midfield,"Jan 28, 1989",33,185,right,"Jan 4, 2021","Jun 30, 2022",500000.0,SC Heerenveen, @siemdejong
+22,17.0,Rami Al Hajj,Attacking Midfield,"Sep 17, 2001",20,180,right,"Jul 1, 2019","Jun 30, 2023",300000.0,SC Heerenveen, -
+23,30.0,Stanislav Shopov,Attacking Midfield,"Feb 23, 2002",20,179,right,"Oct 6, 2020","Jun 30, 2022",250000.0,SC Heerenveen, -
+24,7.0,Filip Stevanovic,Left Winger,"Sep 25, 2002",19,177,right,"Jul 9, 2021","Jun 30, 2023",3500000.0,SC Heerenveen, @10FStevanovic
+25,16.0,Arjen van der Heide,Left Winger,"Nov 19, 2001",20,174,left,"Jul 1, 2019","Jun 30, 2023",600000.0,SC Heerenveen, @Arjen_VDH
+26,11.0,Anthony Musaba,Right Winger,"Dec 6, 2000",21,182,both,"Aug 31, 2021","Jun 30, 2022",1800000.0,SC Heerenveen, -
+27,9.0,Amin Sarr,Centre-Forward,"Mar 11, 2001",20,188,right,"Jan 31, 2022","Jun 30, 2025",800000.0,SC Heerenveen, -
+28,20.0,Sydney van Hooijdonk,Centre-Forward,"Feb 6, 2000",22,190,right,"Jan 25, 2022","Jun 30, 2022",800000.0,SC Heerenveen, @sydneyvh17
+0,-,Maduka Okoye,Goalkeeper,"Aug 28, 1999",22,197,right,"Jan 2, 2022","Jun 30, 2022",3000000.0,Sparta, @OkoyeMaduka
+1,-,Benjamin van Leer,Goalkeeper,"Apr 9, 1992",29,187,right,"Jul 1, 2020","Jun 30, 2022",300000.0,Sparta, @BvLeer
+2,-,Tim Coremans,Goalkeeper,"Apr 10, 1991",30,186,right,"Jul 1, 2018","Jun 30, 2022",250000.0,Sparta, @Timc_10
+3,-,Michaël Heylen,Centre-Back,"Jan 3, 1994",28,187,right,"Jul 1, 2020","Jun 30, 2022",450000.0,Sparta, -
+4,-,Tom Beugelsdijk,Centre-Back,"Aug 7, 1990",31,192,right,"Aug 14, 2020","Jun 30, 2022",400000.0,Sparta, -
+5,-,Bart Vriends,Centre-Back,"May 9, 1991",30,188,right,"Jul 1, 2016","Jun 30, 2022",300000.0,Sparta, @vriends3
+6,-,Riza Durmisi,Left-Back,"Jan 8, 1994",28,168,left,"Jan 31, 2022","Jun 30, 2022",600000.0,Sparta, @RizaDurmisi
+7,-,Mica Pinto,Left-Back,"Jun 4, 1993",28,176,left,"Jan 1, 2020","Jun 30, 2023",600000.0,Sparta, @micapinto76
+8,-,Aaron Meijers,Left-Back,"Oct 28, 1987",34,176,left,"Aug 30, 2021",-,250000.0,Sparta, -
+9,-,Giannis Masouras,Right-Back,"Aug 24, 1996",25,181,right,"Aug 31, 2021","Jun 30, 2022",600000.0,Sparta, -
+10,-,Laurent Jans,Right-Back,"Aug 5, 1992",29,175,right,"Jul 1, 2021","Jun 30, 2023",400000.0,Sparta, -
+11,-,Dirk Abels,Right-Back,"Jun 13, 1997",24,181,right,"Jan 16, 2019","Jun 30, 2023",400000.0,Sparta, -
+12,-,Joeri de Kamps,Defensive Midfield,"Feb 10, 1992",30,176,left,"Jan 20, 2022","Jun 30, 2022",475000.0,Sparta, -
+13,-,Adil Auassar,Defensive Midfield,"Oct 6, 1986",35,186,left,"Jul 6, 2018","Jun 30, 2022",275000.0,Sparta, -
+14,-,Sven Mijnans,Right Midfield,"Mar 9, 2000",22,190,left,"Jul 1, 2020","Jun 30, 2024",700000.0,Sparta, -
+15,-,Younes Namli,Attacking Midfield,"Jun 20, 1994",27,180,left,"Jan 11, 2022","Jun 30, 2022",1500000.0,Sparta, -
+16,-,Arno Verschueren,Attacking Midfield,"Apr 8, 1997",24,185,right,"Jan 19, 2022","Jun 30, 2022",600000.0,Sparta, @ArnoVerschueren
+17,-,Vito van Crooij,Right Winger,"Jan 29, 1996",26,179,right,"Jul 1, 2021","Jun 30, 2024",650000.0,Sparta, @vitovancrooy
+18,-,Adrián Dalmau,Centre-Forward,"Mar 23, 1994",27,182,right,"Jan 1, 2022","Jun 30, 2022",1000000.0,Sparta, @adridalmau94
+19,-,Lennart Thy,Centre-Forward,"Feb 25, 1992",30,184,right,"Jul 1, 2020","Jun 30, 2022",700000.0,Sparta, -
+20,-,Mario Engels,Centre-Forward,"Oct 22, 1993",28,184,right,"Oct 4, 2020","Jun 30, 2022",500000.0,Sparta, -
+0,1.0,Markus Schubert,Goalkeeper,"Jun 12, 1998",23,187,right,"Jul 14, 2021","Jun 30, 2024",1000000.0,Vitesse, -
+1,24.0,Jeroen Houwen,Goalkeeper,"Feb 18, 1996",26,188,right,"Jul 1, 2016","Jun 30, 2023",325000.0,Vitesse, -
+2,33.0,Daan Reiziger,Goalkeeper,"Jun 18, 2001",20,187,right,"Jul 1, 2021","Jun 30, 2024",150000.0,Vitesse, -
+3,23.0,Eric Verstappen,Goalkeeper,"May 19, 1994",27,196,right,"Nov 2, 2021","Jun 30, 2022",125000.0,Vitesse, -
+4,10.0,Riechedly Bazoer,Centre-Back,"Oct 12, 1996",25,184,right,"Jul 12, 2019","Jun 30, 2022",4000000.0,Vitesse, @Riechedly_B
+5,3.0,Danilho Doekhi,Centre-Back,"Jun 30, 1998",23,190,right,"Jul 4, 2018","Jun 30, 2022",3000000.0,Vitesse, -
+6,6.0,Jacob Rasmussen,Centre-Back,"May 28, 1997",24,190,left,"Jul 21, 2020","Jun 30, 2022",3000000.0,Vitesse, -
+7,16.0,Dominik Oroz,Centre-Back,"Oct 29, 2000",21,192,right,"Jan 5, 2021","Jun 30, 2023",500000.0,Vitesse, -
+8,18.0,Tomas Hajek,Centre-Back,"Dec 1, 1991",30,187,left,"Jul 1, 2019","Jun 30, 2023",400000.0,Vitesse, -
+9,39.0,Enzo Cornelisse,Centre-Back,"Jun 29, 2002",19,m,left,"Aug 24, 2020","Jun 30, 2024",300000.0,Vitesse, @EnzoCornelisse
+10,32.0,Maximilian Wittek,Left-Back,"Aug 21, 1995",26,173,left,"Jul 21, 2020","Jun 30, 2024",2000000.0,Vitesse, -
+11,42.0,Million Manhoef,Left-Back,"Jan 3, 2002",20,179,left,"Aug 7, 2020","Jun 30, 2023",300000.0,Vitesse, -
+12,2.0,Eli Dasa,Right-Back,"Dec 3, 1992",29,178,right,"Sep 9, 2019","Jun 30, 2022",1500000.0,Vitesse, -
+13,27.0,Romaric Yapi,Right-Back,"Jul 13, 2000",21,178,right,"Jul 11, 2021","Jun 30, 2024",200000.0,Vitesse, @romaricyapi3
+14,21.0,Matus Bero,Central Midfield,"Sep 6, 1995",26,181,right,"Jul 3, 2018","Jun 30, 2023",1800000.0,Vitesse, @matusbero21
+15,8.0,Sondre Tronstad,Central Midfield,"Aug 26, 1995",26,174,right,"Jan 24, 2020","Jun 30, 2023",1300000.0,Vitesse, @TronstadSondre
+16,22.0,Toni Domgjoni,Central Midfield,"Sep 4, 1998",23,179,right,"Jul 1, 2021","Jun 30, 2024",1000000.0,Vitesse, -
+17,36.0,Patrick Vroegh,Central Midfield,"Nov 29, 1999",22,175,left,"Sep 19, 2019","Jun 30, 2023",250000.0,Vitesse, @patrick_vroegh
+18,20.0,Yann Gboho,Attacking Midfield,"Jan 14, 2001",21,178,right,"Jul 22, 2021","Jun 30, 2022",3500000.0,Vitesse, @thecrazzychiild
+19,40.0,Daan Huisman,Attacking Midfield,"Jul 26, 2002",19,189,right,"Aug 7, 2020","Jun 30, 2023",500000.0,Vitesse, @dlthuisman
+20,44.0,Enrico Hernández,Attacking Midfield,"Feb 23, 2001",21,179,right,"Jul 1, 2021","Jun 30, 2024",200000.0,Vitesse, @enrico_duenas
+21,52.0,Gyan de Regt,Left Winger,"Aug 18, 2003",18,176,,"Jan 12, 2022","Jun 30, 2025",200000.0,Vitesse, Gyan de Regt
+22,7.0,Loïs Openda,Centre-Forward,"Feb 16, 2000",22,175,right,"Jul 21, 2020","Jun 30, 2022",4000000.0,Vitesse, @LoisOpenda
+23,9.0,Adrian Grbic,Centre-Forward,"Aug 4, 1996",25,188,both,"Jan 11, 2022","Jun 30, 2022",4000000.0,Vitesse, -
+24,11.0,Nikolai Baden Frederiksen,Centre-Forward,"May 18, 2000",21,179,left,"Jul 14, 2021","Jun 30, 2024",2500000.0,Vitesse, -
+25,29.0,Thomas Buitink,Centre-Forward,"Jun 14, 2000",21,174,right,"Jul 1, 2018","Jun 30, 2023",700000.0,Vitesse, @BuitinkThomas
+0,21.0,Timon Wellenreuther,Goalkeeper,"Dec 3, 1995",26,188,right,"Aug 18, 2021","Jun 30, 2022",1000000.0,Willem II, @Timonwellle
+1,26.0,Jorn Brondeel,Goalkeeper,"Sep 7, 1993",28,188,right,"Aug 21, 2020","Jun 30, 2023",300000.0,Willem II, @brondeeljorn
+2,24.0,Connor van den Berg,Goalkeeper,"Mar 18, 2001",20,187,right,"Jul 1, 2019","Jun 30, 2024",50000.0,Willem II, -
+3,6.0,Wessel Dammers,Centre-Back,"Mar 1, 1995",27,185,right,"Jan 29, 2022","Jun 30, 2022",700000.0,Willem II, -
+4,4.0,Ulrik Jenssen,Centre-Back,"Jul 17, 1996",25,186,left,"Jul 24, 2021","Jun 30, 2024",650000.0,Willem II, @UlrikYJ
+5,5.0,Emil Bergström,Centre-Back,"May 19, 1993",28,188,right,"Jul 1, 2021","Jun 30, 2022",600000.0,Willem II, -
+6,25.0,Nikolaos Michelis,Centre-Back,"Mar 23, 2001",20,192,left,"Jul 13, 2021","Mar 9, 2022",400000.0,Willem II, -
+7,3.0,Freek Heerkens,Centre-Back,"Sep 13, 1989",32,185,right,"Jul 1, 2013","Jun 30, 2022",350000.0,Willem II, -
+8,27.0,Derrick Köhn,Left-Back,"Feb 4, 1999",23,180,left,"Jul 1, 2020","Jun 30, 2023",650000.0,Willem II, -
+9,18.0,Miquel Nelom,Left-Back,"Sep 22, 1990",31,175,left,"Sep 2, 2019","Jun 30, 2022",250000.0,Willem II, @miquelnelom
+10,2.0,Kilian Ludewig,Right-Back,"Mar 5, 2000",22,175,right,"Jan 13, 2022","Jun 30, 2022",1000000.0,Willem II, -
+11,13.0,Leeroy Owusu,Right-Back,"Aug 13, 1996",25,174,right,"Jul 1, 2020","Jun 30, 2023",650000.0,Willem II, -
+12,20.0,Godfried Roemeratoe,Defensive Midfield,"Aug 19, 1999",22,178,right,"Aug 23, 2021","Jun 30, 2022",700000.0,Willem II, -
+13,17.0,Driess Saddiki,Defensive Midfield,"Aug 9, 1996",25,179,right,"Jul 1, 2018","Jun 30, 2022",650000.0,Willem II, -
+14,8.0,Pol Llonch,Central Midfield,"Oct 7, 1992",29,170,right,"Jul 1, 2018","Jun 30, 2024",800000.0,Willem II, -
+15,22.0,Wesley Spieringhs,Central Midfield,"Jan 16, 2002",20,188,right,"Apr 9, 2021","Jun 30, 2023",450000.0,Willem II, -
+16,15.0,Max Svensson,Left Midfield,"Jun 19, 1998",23,176,right,"Jul 11, 2021","Jun 30, 2024",650000.0,Willem II, @maxsvensson11
+17,19.0,Dan Crowley,Attacking Midfield,"Aug 3, 1997",24,174,right,"Feb 2, 2022","Jun 30, 2023",1000000.0,Willem II, -
+18,23.0,Görkem Saglam,Attacking Midfield,"Apr 11, 1998",23,178,right,"Jan 20, 2020","Jun 30, 2022",700000.0,Willem II, @GoerkemSaglam
+19,29.0,Thijs Oosting,Attacking Midfield,"May 2, 2000",21,176,left,"Jan 31, 2022","Jun 30, 2026",600000.0,Willem II, Thijs Oosting
+20,16.0,Ringo Meerveld,Attacking Midfield,"Dec 21, 2002",19,177,right,"Aug 31, 2021","Jun 30, 2025",500000.0,Willem II, -
+21,11.0,Mats Köhlert,Left Winger,"May 2, 1998",23,168,left,"Jul 1, 2019","Jun 30, 2022",700000.0,Willem II, -
+22,14.0,Elton Kabangu,Left Winger,"Feb 8, 1998",24,178,left,"Aug 27, 2019","Jun 30, 2022",350000.0,Willem II, @Kabangsss
+23,7.0,Ché Nunnely,Right Winger,"Feb 4, 1999",23,170,right,"Jul 1, 2019","Jun 30, 2022",900000.0,Willem II, @CheNunnely
+24,10.0,Argyris Kampetsis,Centre-Forward,"May 6, 1999",22,186,both,"Aug 31, 2021","Jun 30, 2022",600000.0,Willem II, -
+25,9.0,Jizz Hornkamp,Centre-Forward,"Mar 7, 1998",24,182,right,"Jan 24, 2022","Jun 30, 2024",400000.0,Willem II, -
