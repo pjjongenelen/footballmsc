@@ -47,7 +47,12 @@ df.drop(df[df['player'] == "Team Ø"].index, inplace=True)
 df.reset_index(drop=True)
 
 # Add a column with the fixture hashtag
-# TODO
+abbreviations = {'AFC Ajax': 'aja', 'AZ Alkmaar': 'az', 'FC Groningen': 'gro', 'FC Twente': 'twe', 'FC Utrecht': 'utr', 'Feyenoord': 'fey', 'Fortuna Sittard': 'for', 'Go Ahead Eagles': 'GAE', 'Heracles Almelo': 'her', 'NEC Nijmegen': 'nec', 'PEC Zwolle': 'pec', 'PSV': 'psv', 'RKC Waalwijk': 'rkc', 'SC Cambuur': 'cam', 'Sparta Rotterdam': 'spa', 'Vitesse': 'vit', 'Willem II': 'wil', 'sc Heerenveen': 'hee'}
+df['hashtag'] = df.home.map(abbreviations) + df.away.map(abbreviations)
+
+# Transform date column to datetime type
+df['date'] = df.date.map()
+df.date = pd.to_datetime(df.date, infer_datetime_format=True)
 
 # Add an ID for each match
 
