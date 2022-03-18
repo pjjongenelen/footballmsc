@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-ROOT = "C:/Users/timjo/PycharmProjects/footballmsc"
+ROOT = "C:/Users/timjo/python_projects/footballmsc"
 
 def process_timestamp(timestamp: str):
     time = timestamp[-9:-4]
@@ -28,7 +28,8 @@ for html_file in os.listdir(f"{ROOT}/data/grades_html"):
         df2 = pd.concat([home, away], ignore_index=True)
 
         # add general match info
-        df2['fixture'] = home_club + " - " + away_club
+        df2['home'] = home_club
+        df2['away'] = away_club
         df2['time'], df2['date'] = process_timestamp(tables[2].columns[1])
 
         if home_club == "AFC Ajax" and away_club == "AZ Alkmaar":
@@ -41,5 +42,15 @@ for html_file in os.listdir(f"{ROOT}/data/grades_html"):
 # De Telegraaf has no published grades for this season on voetbal.com
 df = df.drop('De Telegraaf', axis=1)
 
+# We don't need the team averages per match, we can calculate this manually later
+df.drop(df[df['player'] == "Team Ø"].index, inplace=True)
+df.reset_index(drop=True)
+
+# Add a column with the fixture hashtag
+# TODO
+
+# Add an ID for each match
+
+
 # save
-df.to_csv(f"{ROOT}/data/voetbalcom_grades.csv")
+df.to_csv(f"{ROOT}/data/grades_2.csv")
