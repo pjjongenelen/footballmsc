@@ -1,16 +1,28 @@
 import pandas as pd
 
-df = pd.read_csv('/data/grades.csv')
+df = pd.read_csv('data/grades.csv', parse_dates=['date'])
 
-# get fixture info
-fixture = 'ajapsv'
-fixture_date = '2020_12_04'
+previous_query = ""
 
-start_date = fixture_date# - 1
-end_date = fixture_date# + 1
-query = f'snscrape --jsonl --progress --since {start_date} twitter-hashtag "#{fixture} until:{end_date}" > {fixture}.json'
+# iterate over the grades df
+for i, row in df.iterrows():
 
-print(query)
+    # get query parameters
+    fixture = row.hashtag
+    fixture_date = row.date
+    start_date = fixture_date + pd.DateOffset(-1)
+    end_date = fixture_date + pd.DateOffset(1)
+    start_date = start_date.date()
+    end_date = end_date.date()
 
-# with open('./res/twitter_scrape_queries.txt', 'a') as file:
-#     file.write(query)
+    # create the query
+    query = f'snscrape --jsonl --progress --since {start_date} twitter-hashtag "#{fixture} until:{end_date}" > {fixture}.json'
+
+    # remove double entries
+    if query != previous_query:
+        # write to txt file    
+        with open('./res/twitter_scrape_queries.txt', 'a') as file:
+            file.write(f"{query}\n")
+
+        # update previous query
+        previous_query = query

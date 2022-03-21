@@ -50,12 +50,19 @@ df.reset_index(drop=True)
 abbreviations = {'AFC Ajax': 'aja', 'AZ Alkmaar': 'az', 'FC Groningen': 'gro', 'FC Twente': 'twe', 'FC Utrecht': 'utr', 'Feyenoord': 'fey', 'Fortuna Sittard': 'for', 'Go Ahead Eagles': 'GAE', 'Heracles Almelo': 'her', 'NEC Nijmegen': 'nec', 'PEC Zwolle': 'pec', 'PSV': 'psv', 'RKC Waalwijk': 'rkc', 'SC Cambuur': 'cam', 'Sparta Rotterdam': 'spa', 'Vitesse': 'vit', 'Willem II': 'wil', 'sc Heerenveen': 'hee'}
 df['hashtag'] = df.home.map(abbreviations) + df.away.map(abbreviations)
 
+def map_substring(s, dict_map):
+    for key in dict_map.keys():
+        if key in s: 
+            return dict_map[key]
+
 # Transform date column to datetime type
-df['date'] = df.date.map()
+months_map = {'Augustus': 'august', 'Oktober': 'october', 'November': 'november', 'December': 'december', 'Januari': 'january', 'Februari': 'february', 'Maart': 'march'}
+for key in months_map:
+    df.date = df.date.str.replace(key, months_map[key])
 df.date = pd.to_datetime(df.date, infer_datetime_format=True)
 
 # Add an ID for each match
 
 
 # save
-df.to_csv(f"{ROOT}/data/grades_2.csv")
+df.to_csv(f"{ROOT}/data/grades.csv", index=False)
