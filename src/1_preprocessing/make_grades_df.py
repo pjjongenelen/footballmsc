@@ -8,8 +8,8 @@ def process_timestamp(timestamp: str):
     date = timestamp.split(", ")[1][:-9].replace(".", "")
     return time, date
 
-for html_file in os.listdir(f"{ROOT}/data/grades_html"):
-    loc = ROOT + "/data/grades_html/" + html_file
+for html_file in os.listdir(f"{ROOT}/data/raw/voetbalcom_html"):
+    loc = ROOT + "/data/raw/voetbalcom_html/" + html_file
     with open(loc, "rb") as f:
         # load the info from this html file
         tables = pd.read_html(f)
