@@ -27,4 +27,5 @@ for file in files_progress:
 
 # make main df and save to pickle
 df = pd.concat(dfs)
+df = df.reset_index(drop = True)
 df.to_pickle('data/tweets.pkl')
