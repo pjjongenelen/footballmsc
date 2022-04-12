@@ -14,16 +14,21 @@ ROOT = "C:/Users/timjo/python_projects/footballmsc"
 
 
 def convert_num_nam(string):
-    "Given a string that is a concatenation of a jersey number and the name, return the two substring seperate"
+    "Small helper function, input '30Thomassen' is returned as (30, Thomassen)"
 
+    # extract jersey number
     num = [letter for letter in string if letter.isdigit()]
     num = "".join(map(str, num))
+    # extract player name
     nam = [letter for letter in string if not letter.isdigit()]
     nam = "".join(map(str, nam))
 
     return num, nam
     
 def get_field_df(soup):
+    """
+    """
+
     field_ratings = []
     field_players = []
     field_numbers = []
@@ -42,6 +47,9 @@ def get_field_df(soup):
     return pd.DataFrame({"number": field_numbers, "name": field_players, "rating": field_ratings})
     
 def get_bench_df(soup):
+    """
+    """
+
     bench_ratings = []
     bench_players = []
     bench_numbers = []
@@ -52,16 +60,20 @@ def get_bench_df(soup):
             bench_players.append(name)
             bench_numbers.append(num)
 
-            # get rating
+            # extract rating
             rating_element = subsoup.find(class_=re.compile("PlayerRatingStyled"))
             bench_ratings.append(rating_element.find('span').get_text())
 
     return pd.DataFrame({"number": bench_numbers, "name": bench_players, "rating": bench_ratings})
 
-if __name__ == "__main__":
-    # first we need to get the list of urls of all the match summary pages
+
+def generate_match_urls(last_playing_round: int) -> list:
+    """
+    Returns all Eredivisie match urls from fotmob.com for the 21-22 season up until a given playing round
+    """
+
     urls = []
-    for playing_round in tqdm(range(1, 3), desc="scraping urls"):
+    for playing_round in tqdm(range(1, last_playing_round), desc="scraping urls"):
         page = requests.get(f"https://www.fotmob.com/leagues/57/matches/eredivisie?page={playing_round}")
         soup = BeautifulSoup(page.content, "html.parser")
         
@@ -69,21 +81,40 @@ if __name__ == "__main__":
             url_end = a['href']
             if 'matchfacts' in url_end:
                 urls.append(f"https://www.fotmob.com{url_end}")
+    
+    return urls
 
+def scrape_player_grades(urls):
     # now let's scrape the player grades from each of these urls
     ratings = pd.DataFrame()
 
-    for url in tqdm(urls, desc = "scraping grades"):
+    for url in tqdm(urls[:3], desc = "scraping grades"):
+        # get page
         page = requests.get(url)
         soup = BeautifulSoup(page.content, 'html.parser')
 
+        # get ratings from this match page
         new_ratings = pd.concat([get_field_df(soup), get_bench_df(soup)])
         home, away = url.split("/")[-1].split("-vs-")
+
+        # get home and away team, and fotmob match id
         new_ratings['home'], new_ratings['away'] = home, away
+        new_ratings['fotmob_match_id'] = url.split("/")[-3]
 
+        # add current ratings to df
         ratings = pd.concat([ratings, new_ratings]).reset_index(drop=True)
+    
+    return ratings
 
-    print(ratings)
+
+if __name__ == "__main__":
+    # get match urls
+    url_list = generate_match_urls(last_playing_round = 28)
+    # scrape grades
+    fotmob_grades_df = scrape_player_grades(urls = url_list)    
+
+    # output
+    print(fotmob_grades_df)
     # ratings.to_pickle(f"{ROOT}/data/raw/fotmob_ratings.pkl")
 
     

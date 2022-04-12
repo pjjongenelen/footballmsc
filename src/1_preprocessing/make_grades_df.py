@@ -61,8 +61,9 @@ for key in months_map:
     df.date = df.date.str.replace(key, months_map[key])
 df.date = pd.to_datetime(df.date, infer_datetime_format=True)
 
-# Add an ID for each match
+# Add an ID for each match, the format is: hashtag-y-m-d. For Ajax - AZ on 12 December 2021: ajaaz-21-12-12
+dti = pd.DatetimeIndex(df.date)
+df['match_id'] = ["-".join([hashtag, str(year)[2:], str(month), str(day)]) for year, month, day, hashtag in zip(dti.year, dti.month, dti.day, df.hashtag)]
 
-
-# save
+# save to csv
 df.to_csv(f"{ROOT}/data/grades.csv", index=False)
