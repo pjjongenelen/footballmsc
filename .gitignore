@@ -1,4 +1,3 @@
 .idea/
 .ipynb_checkpoints/
-data/
 src/voetbalcom_scraping/voetbalcom_match_report_urls_eredivisie_2122.pkl
