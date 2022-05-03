@@ -18,8 +18,6 @@ class SquadSpider(scrapy.Spider):
         ids = [610, 383, 234, 1090, 499, 200, 306, 202, 317, 1304, 403, 385, 1269, 468, 467, 133, 235, 1435]
 
         urls = [f'https://www.transfermarkt.com/{team}/kader/verein/{id}/saison_id/2021/plus/1' for team, id in zip(teams, ids)]
-
-        # urls = [f"https://www.transfermarkt.com/{team}/startseite/verein/{id}/saison_id/2021" for team, id in zip(teams, ids)]
                 
         # scrape the pages
         for squad in urls:

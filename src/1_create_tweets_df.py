@@ -1,10 +1,14 @@
-from asyncore import file_dispatcher
-import glob, os
+import glob
+import os
 import pandas as pd
 from tqdm import tqdm
 
+
+ROOT = "C:/Users/timjo/OD/Silva_Ducis/Scriptie/footballmsc"
+
+
 # create list of json file locations
-json_dir = 'data/raw/tweets_json'
+json_dir = f'{ROOT}/data/raw/tweets_json'
 json_pattern = os.path.join(json_dir, "*.json")
 file_list = glob.glob(json_pattern)
 
@@ -27,5 +31,5 @@ for file in files_progress:
 
 # make main df and save to pickle
 df = pd.concat(dfs)
-df = df.reset_index(drop = True)
-df.to_pickle('data/tweets.pkl')
+df = df.reset_index(drop=True)
+df.to_pickle(f'{ROOT}/data/tweets.csv')

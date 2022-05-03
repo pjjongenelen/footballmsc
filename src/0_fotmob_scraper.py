@@ -8,12 +8,12 @@ import re
 import requests
 from tqdm import tqdm
 
-ROOT = "C:/Users/timjo/OneDrive - TU Eindhoven/Silva_Ducis/Scriptie/footballmsc"
+ROOT = "C:/Users/timjo/OD/Silva_Ducis/Scriptie/footballmsc"
 
 
 def generate_match_urls(last_playing_round: int) -> list:
     """
-    Returns all Eredivisie match urls from fotmob.com for the 21-22 season up until a given playing round
+    Returns all Eredivisie match urls from 0_fotmob_scraping.com for the 21-22 season up until a given playing round
     """
 
     urls = []
@@ -33,14 +33,12 @@ def generate_match_urls(last_playing_round: int) -> list:
 
 
 def standardize_squad_name(squad_string):
-    """Given a fotmob squad name (from the url), returns a standardized squad name and the abbreviation"""
+    """Given a 0_fotmob_scraping squad name (from the url), returns a standardized squad name and the abbreviation"""
 
-    squad_dict = {'ajax': 'AFC Ajax', 'az-alkmaar': 'AZ Alkmaar', 'fc-groningen': 'FC Groningen', 'fc-twente': 'FC Twente', 'fc-utrecht': 'FC Utrecht', 'feyenoord': 'Feyenoord', 'fortuna-sittard': 'Fortuna Sittard', 'go-ahead-eagles': 'Go Ahead Eagles', 'heracles': 'Heracles Almelo',
-                  'nec-nijmegen': 'NEC Nijmegen', 'pec-zwolle': 'PEC Zwolle', 'psv-eindhoven': 'PSV', 'rkc-waalwijk': 'RKC Waalwijk', 'cambuur': 'SC Cambuur', 'sparta-rotterdam': 'Sparta Rotterdam', 'vitesse': 'Vitesse', 'willem-ii': 'Willem II', 'sc-heerenveen': 'sc Heerenveen'}
+    squad_dict = {'ajax': 'AFC Ajax', 'az-alkmaar': 'AZ Alkmaar', 'fc-groningen': 'FC Groningen', 'fc-twente': 'FC Twente', 'fc-utrecht': 'FC Utrecht', 'feyenoord': 'Feyenoord', 'fortuna-sittard': 'Fortuna Sittard', 'go-ahead-eagles': 'Go Ahead Eagles', 'heracles': 'Heracles Almelo', 'nec-nijmegen': 'NEC Nijmegen', 'pec-zwolle': 'PEC Zwolle', 'psv-eindhoven': 'PSV', 'rkc-waalwijk': 'RKC Waalwijk', 'cambuur': 'SC Cambuur', 'sparta-rotterdam': 'Sparta Rotterdam', 'vitesse': 'Vitesse', 'willem-ii': 'Willem II', 'sc-heerenveen': 'sc Heerenveen'}
     name = squad_dict[squad_string]
 
-    abbr_dict = {'AFC Ajax': 'aja', 'AZ Alkmaar': 'az', 'FC Groningen': 'gro', 'FC Twente': 'twe', 'FC Utrecht': 'utr', 'Feyenoord': 'fey', 'Fortuna Sittard': 'for', 'Go Ahead Eagles': 'gae', 'Heracles Almelo': 'her',
-                 'NEC Nijmegen': 'nec', 'PEC Zwolle': 'pec', 'PSV': 'psv', 'RKC Waalwijk': 'rkc', 'SC Cambuur': 'cam', 'Sparta Rotterdam': 'spa', 'Vitesse': 'vit', 'Willem II': 'wil', 'sc Heerenveen': 'hee'}
+    abbr_dict = {'AFC Ajax': 'aja', 'AZ Alkmaar': 'az', 'FC Groningen': 'gro', 'FC Twente': 'twe', 'FC Utrecht': 'utr', 'Feyenoord': 'fey', 'Fortuna Sittard': 'for', 'Go Ahead Eagles': 'gae', 'Heracles Almelo': 'her', 'NEC Nijmegen': 'nec', 'PEC Zwolle': 'pec', 'PSV': 'psv', 'RKC Waalwijk': 'rkc', 'SC Cambuur': 'cam', 'Sparta Rotterdam': 'spa', 'Vitesse': 'vit', 'Willem II': 'wil', 'sc Heerenveen': 'hee'}
     abbr = abbr_dict[name]
 
     return {'name': name, 'abbreviation': abbr}
@@ -87,7 +85,7 @@ def get_matchcard_variable_list(start_variables, urls):
 
     variable_names = []
 
-    for url in matchcard_urls:
+    for url in urls:
         # scrape matchcards
         mc_page = requests.get(url)
         mc_soup = BeautifulSoup(mc_page.content, 'html.parser')
@@ -115,17 +113,17 @@ def get_fotmob_stats(html_overlay):
 if __name__ == "__main__":
     """
     Season level data
-    - urls to fotmob match facts of all fixtures in this Eredivisie season
+    - urls to 0_fotmob_scraping match facts of all fixtures in this Eredivisie season
     """
     variable_names = []
     fotmob_df = pd.DataFrame()
 
-    playing_rounds = generate_match_urls(last_playing_round=3)
+    playing_rounds = generate_match_urls(last_playing_round = 27)
 
-    for fixture_report in tqdm(playing_rounds, desc='fixtures'):
+    for fixture_report in tqdm(playing_rounds, desc='Match reports'):
         """
         Fixture level data:
-        - match ids (ours + fotmob)
+        - match ids (ours + 0_fotmob_scraping)
         - match cards with player rating and stats
         """
 
@@ -136,15 +134,17 @@ if __name__ == "__main__":
         # find all matchcard urls on the page
         matchcard_urls = get_mc_urls(fixture_report)
 
-        # create a list of all variable names that fotmob offers on its matchcards + a 'name' and 'hashtag' variable
+        # create a list of all variable names that 0_fotmob_scraping offers on its matchcards + a 'name' and 'hashtag' variable
         if len(variable_names) == 0:
             print('Generating variable list...')
             variable_names = get_matchcard_variable_list(start_variables=['hashtag', 'name'], urls=matchcard_urls)
 
-        for matchcard in tqdm(matchcard_urls, desc='matchcards'):
+        for matchcard in matchcard_urls:
             """
-            Player level data
+            Player level data, around 45 variables measuring all kinds of statistics.
+            Also, the very important FotMob rating
             """
+            
             # create df for this player, to be appended to the master df
             matchcard_df = pd.DataFrame(columns=variable_names)
 
@@ -155,7 +155,7 @@ if __name__ == "__main__":
             # 'zoom in' on the matchcard overlay, as the original webpage is still present in the complete HTML response
             overlay = mc_soup.find(class_=re.compile("BGOverlay"))
 
-            # set variables that are not part of the main fotmob statistics
+            # set variables that are not part of the main 0_fotmob_scraping statistics
             matchcard_df.at[0, 'hashtag'] = match_id
             matchcard_df.at[0, 'name'] = overlay.find(class_=re.compile('PlayerName')).get_text()
 
@@ -167,4 +167,4 @@ if __name__ == "__main__":
             # add mew data to master df
             fotmob_df = pd.concat([fotmob_df, matchcard_df], ignore_index=True)
 
-    fotmob_df.to_pickle(f"{ROOT}/data/raw/fotmob.pkl")
+    fotmob_df.to_pickle(f"{ROOT}/data/0_fotmob_scraping.pkl")

@@ -41,4 +41,4 @@ for html in os.listdir(f"{ROOT}/data/squads_html"):
     DFS.append(new_df)
 
 all_squads_df = pd.concat(DFS)
-all_squads_df.to_csv(f"{ROOT}/data/eredivisie_players_transfermarktcom.csv")
+all_squads_df.to_csv(f"{ROOT}/data/players.csv")
