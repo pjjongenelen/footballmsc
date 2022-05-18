@@ -12,9 +12,9 @@ This project consists of 4 main steps - for now...
 
 See the [pipelines overview](res/pipeline_overview.pdf) for a graphical representation of steps 1-3:
 
-![Tweets preprocessing](https://github.com/pjjongenelen/footballmsc/blob/master/res/figures/Pipeline%20overview/Slide1.JPG){widht=50%}
-![RobBERT fine-tuning](https://github.com/pjjongenelen/footballmsc/blob/master/res/figures/Pipeline%20overview/Slide2.JPG){widht=50%}
-![Sentiment analysis](https://github.com/pjjongenelen/footballmsc/blob/master/res/figures/Pipeline%20overview/Slide3.JPG){widht=50%}
+![Tweets preprocessing](https://github.com/pjjongenelen/footballmsc/blob/master/res/figures/Pipeline%20overview/Slide1.JPG){width=50%}
+![RobBERT fine-tuning](https://github.com/pjjongenelen/footballmsc/blob/master/res/figures/Pipeline%20overview/Slide2.JPG){width=50%}
+![Sentiment analysis](https://github.com/pjjongenelen/footballmsc/blob/master/res/figures/Pipeline%20overview/Slide3.JPG){width=50%}
 
 ---
 
