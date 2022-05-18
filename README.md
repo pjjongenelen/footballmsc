@@ -4,13 +4,16 @@ Master thesis project by Tim Jongenelen
 
 ---
 
-This project consists of 4 main steps - for now...
-1. Preprocess the raw tweets into a format that is usable for the RobBERT model.
-2. Manually annotate a bunch of preprocessed tweets and fine-tune the model.
-3. Use the fine-tuned model to annotate all preprocessed tweets.
-4. Compare the results of step 3 with the grades given bij AD, VI, and FotMob to test the validity of Twitter SA for football performance analysis. 
+The code is categorized as follows:
 
-See the [pipelines overview](res/pipeline_overview.pdf) for a graphical representation of steps 1-3.
+| Layer | Description | Name tag |
+| ----- | ----------- | -------- |
+| Exctraction | Scrape VI, AD, and FotMob player grades and performance statistics | `src/0_...` |
+| Transformation | Transform the data from the extraction layer in such a way that it can be stored in a useful format (mostly .csv and .pkl) | `src/1_...` |
+| Preprocessing | Manipulate the raw data resulting from the previous layers so that we can perform analyses on it in the consecutive layers | `src/2_...` |
+| Exploration | Perform exploratory analyses on the data from all previous layers | `src/3_...` |
+| Analysis | Sentiment analysis using the RobBERT model on the preprocessed tweets | `src/4_...` |
+| Uncategorized | Other code snippets | `src/9_...` and `eredivisie_nlp.py` |
 
 ---
 
