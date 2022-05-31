@@ -14,6 +14,7 @@ import json
 from nltk.tokenize import sent_tokenize
 import pandas as pd
 import re
+from tqdm import tqdm
 
 
 def trim_spaces(string):
@@ -65,10 +66,10 @@ def resolve_aliases(tweets, hashtags):
         alias_dict = json.load(f)
 
     new_tweets = []
-    for tweet, hashtag in zip(tweets, hashtags):
+    for tweet, hashtag in tqdm(zip(tweets, hashtags), total=len(tweets)):
 
         # get only the dictionaries for the teams that were playing
-        home, away = enlp.home_and_away([hashtag])[0][0], enlp.home_and_away([hashtag])[1][0]
+        home, away = enlp.home_and_away([hashtag])[0][0].lower(), enlp.home_and_away([hashtag])[1][0].lower()
         alias_dictionaries = [alias_dict[home]['twitter'], alias_dict[home]['name'],
                               alias_dict[away]['twitter'], alias_dict[away]['name']]
 
@@ -110,7 +111,7 @@ def remove_trailing_hashtags(tweets):
     """
 
     new_tweets = []
-    for tweet in tweets:
+    for tweet in tqdm(tweets, desc="trailing hts"):
         new_tweet = []
         for sent in tweet:
             tokens = sent.split(" ")
@@ -149,7 +150,7 @@ def resolve_in_text_hashtags(tweets):
     """
 
     new_tweets = []
-    for tweet in tweets:
+    for tweet in tqdm(tweets, desc="in-text hts"):
         new_tweet = []
         for sent in tweet:
             sent = sent.replace("#", "")
@@ -164,35 +165,39 @@ if __name__ == "__main__":
     df = pd.read_pickle(f"{enlp.determine_root()}/data/raw/tweets_raw.pkl")
     df = df[df.lang == 'nl'].reset_index(drop=True)
 
-    # ! create development set
-    subsample = df[:100].copy()
-
     # preprocess tweet text
-    subsample['text_pp'] = list(map(remove_and_replace, subsample.content.tolist()))
+    print("1/6 Replacing emojis, double spaces, and sentence tokenizing.")
+    df['text_pp'] = list(map(remove_and_replace, df.content.tolist()))
 
     # remove redundant columns
-    subsample.source = subsample.sourceLabel
-    subsample.drop(['_type', 'url', 'renderedContent', 'lang', 'sourceUrl', 'sourceLabel',
+    df.source = df.sourceLabel
+    df.drop(['_type', 'url', 'renderedContent', 'lang', 'sourceUrl', 'sourceLabel',
                     'tcooutlinks', 'quotedTweet', 'inReplyToTweetId', 'inReplyToUser',
                     'mentionedUsers', 'coordinates', 'place', 'cashtags'], axis=1, inplace=True)
 
     # set home and away teams
-    subsample['home'], subsample['away'] = enlp.home_and_away(subsample.hashtag)
+    print("2/6 Adding home and away teams")
+    df['home'], df['away'] = enlp.home_and_away(df.hashtag)
 
     # transform mentions and names to the standardized name format
-    subsample.text_pp = resolve_aliases(subsample.text_pp, subsample.hashtag)
+    print("3/6 Resolving aliases")
+    df.text_pp = resolve_aliases(df.text_pp, df.hashtag)
 
     # deal with hashtags
-    subsample.text_pp = remove_trailing_hashtags(subsample.text_pp)
-    subsample.text_pp = resolve_in_text_hashtags(subsample.text_pp)
+    print("4/6 Working on hashtags")
+    df.text_pp = remove_trailing_hashtags(df.text_pp)
+    df.text_pp = resolve_in_text_hashtags(df.text_pp)
 
     # remove mentions
-    subsample.text_pp = [[re.sub(r'@\S+', "USER", sent) for sent in tweet] for tweet in subsample.text_pp]
+    print("5/6 Replacing mentions with 'USER'")
+    df.text_pp = [[re.sub(r'@\S+', "USER", sent) for sent in tweet] for tweet in df.text_pp]
 
     # remove non-alphanumerics and other special cases
+    print("6/6 Replacing alphanumerics with corresponding text.")
     to_recode = {" & ": " en "}
     for key, value in to_recode.items():
-        subsample.text_pp = [[sent.replace(key, value) for sent in tweet] for tweet in subsample.text_pp]
+        df.text_pp = [[sent.replace(key, value) for sent in tweet] for tweet in df.text_pp]
 
     # save to disk
+    print("Saving to disk")
     df.to_pickle(f"{enlp.determine_root()}/data/tweets.pkl")

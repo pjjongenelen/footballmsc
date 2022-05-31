@@ -1,6 +1,7 @@
 .idea/
 .ipynb_checkpoints/
 .vscode/
-src/voetbalcom_scraping/voetbalcom_match_report_urls_eredivisie_2122.pkl
+src/0_scrape_voetbalcom/voetbalcom_match_report_urls_eredivisie_2122.pkl
 data/
 res/Pipeline overview.pptx
+src/__pycache__
