@@ -5,7 +5,7 @@ Tweet preprocessing algorithm
 - removes urls
 - tokenizes on a sentence level
 - resolves hashtags
-- #TODO remove mentions and non-alphanumerics
+- remove mentions and non-alphanumerics
 """
 
 import emoji
@@ -165,35 +165,35 @@ if __name__ == "__main__":
     df = pd.read_pickle(f"{enlp.determine_root()}/data/raw/tweets_raw.pkl")
     df = df[df.lang == 'nl'].reset_index(drop=True)
 
-    # preprocess tweet text
-    print("1/6 Replacing emojis, double spaces, and sentence tokenizing.")
-    df['text_pp'] = list(map(remove_and_replace, df.content.tolist()))
-
     # remove redundant columns
     df.source = df.sourceLabel
     df.drop(['_type', 'url', 'renderedContent', 'lang', 'sourceUrl', 'sourceLabel',
-                    'tcooutlinks', 'quotedTweet', 'inReplyToTweetId', 'inReplyToUser',
-                    'mentionedUsers', 'coordinates', 'place', 'cashtags'], axis=1, inplace=True)
+             'tcooutlinks', 'quotedTweet', 'inReplyToTweetId', 'inReplyToUser',
+             'mentionedUsers', 'coordinates', 'place', 'cashtags'], axis=1, inplace=True)
 
     # set home and away teams
-    print("2/6 Adding home and away teams")
+    print("Adding home and away teams")
     df['home'], df['away'] = enlp.home_and_away(df.hashtag)
 
     # transform mentions and names to the standardized name format
-    print("3/6 Resolving aliases")
+    print("Resolving aliases")
     df.text_pp = resolve_aliases(df.text_pp, df.hashtag)
 
+    # preprocess tweet text
+    print("Replacing emojis, double spaces, and sentence tokenizing.")
+    df['text_pp'] = list(map(remove_and_replace, df.content.tolist()))
+
     # deal with hashtags
-    print("4/6 Working on hashtags")
+    print("Working on hashtags")
     df.text_pp = remove_trailing_hashtags(df.text_pp)
     df.text_pp = resolve_in_text_hashtags(df.text_pp)
 
     # remove mentions
-    print("5/6 Replacing mentions with 'USER'")
+    print("Replacing mentions with 'USER'")
     df.text_pp = [[re.sub(r'@\S+', "USER", sent) for sent in tweet] for tweet in df.text_pp]
 
     # remove non-alphanumerics and other special cases
-    print("6/6 Replacing alphanumerics with corresponding text.")
+    print("Replacing alphanumerics with corresponding text.")
     to_recode = {" & ": " en "}
     for key, value in to_recode.items():
         df.text_pp = [[sent.replace(key, value) for sent in tweet] for tweet in df.text_pp]
