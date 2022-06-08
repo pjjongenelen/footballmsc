@@ -17,6 +17,7 @@ Result after manual coding:
 
 import eredivisie_nlp as enlp
 import pandas as pd
+from pattern.nl import sentiment
 
 df = pd.read_pickle(f"{enlp.determine_root()}/data/tweets.pkl")
 content_pp = []
@@ -28,10 +29,11 @@ for tweet in df.text_pp:
         content_pp.append(" ".join(tweet) + ".")
 
 df['content_pp'] = content_pp
+df['sentiment_pattern'] = [round(sentiment(tweet)[0], 1) for tweet in df['content_pp']]
 
 # DONT RUN THE CODE BELOW, AS IT WILL OVERWRITE THE EXISTING EXCEL FILE, NAME IS ALREADY CHANGED FOR SAFETY
 
-sentences = pd.DataFrame({"text": df.content_pp, "hashtag": df.hashtag, "annotation": 100})
+sentences = pd.DataFrame({"text": df.content_pp, "hashtag": df.hashtag, "annotation": 100, "sentiment_pattern": df.sentiment_pattern})
 options = {'strings_to_formulas': False, 'strings_to_urls': False}
 writer = pd.ExcelWriter(f"{enlp.determine_root()}/data/sentiment_annotations_EMPTY.xlsx", engine='xlsxwriter', options=options)
 sentences.to_excel(writer, 'Sheet_1', index=False)
