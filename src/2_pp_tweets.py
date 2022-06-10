@@ -6,6 +6,9 @@ Tweet preprocessing algorithm
 - tokenizes on a sentence level
 - resolves hashtags
 - remove mentions and non-alphanumerics
+
+You can play around with the options to create different outcome files.
+
 """
 
 import emoji
@@ -15,6 +18,8 @@ from nltk.tokenize import sent_tokenize
 import pandas as pd
 import re
 from tqdm import tqdm
+
+remove_stopwords = True
 
 
 def trim_spaces(string):
@@ -83,7 +88,7 @@ def resolve_aliases(tweets, hashtags):
                 found_aliases = []
 
                 for key, value in dictionary.items():
-                    if key in sent:
+                    if " " + key + " " in sent:
                         found_aliases.append(key)
 
                 if len(found_aliases) > 0:
@@ -161,43 +166,71 @@ def resolve_in_text_hashtags(tweets):
 
 
 if __name__ == "__main__":
-    # load data, and maintain only Dutch tweets
+    # step 0:
+    # load raw data
     df = pd.read_pickle(f"{enlp.determine_root()}/data/raw/tweets_raw.pkl")
-    df = df[df.lang == 'nl'].reset_index(drop=True)
 
-    # remove redundant columns
+    # step 1:
+    # Use metadata to remove non-dutch tweets,
+    # redundant columns,
+    # and extract home and away playing teams
+    df = df[df.lang == 'nl'].reset_index(drop=True)
     df.source = df.sourceLabel
     df.drop(['_type', 'url', 'renderedContent', 'lang', 'sourceUrl', 'sourceLabel',
              'tcooutlinks', 'quotedTweet', 'inReplyToTweetId', 'inReplyToUser',
              'mentionedUsers', 'coordinates', 'place', 'cashtags'], axis=1, inplace=True)
-
-    # set home and away teams
-    print("Adding home and away teams")
     df['home'], df['away'] = enlp.home_and_away(df.hashtag)
 
-    # transform mentions and names to the standardized name format
-    print("Resolving aliases")
-    df.text_pp = resolve_aliases(df.text_pp, df.hashtag)
-
+    # step 2:
     # preprocess tweet text
     print("Replacing emojis, double spaces, and sentence tokenizing.")
     df['text_pp'] = list(map(remove_and_replace, df.content.tolist()))
 
+    # step 3:
+    # transform mentions and names to the standardized name format
+    print("Resolving aliases")
+    df.text_pp = resolve_aliases(df.text_pp, df.hashtag)
+
     # deal with hashtags
-    print("Working on hashtags")
+    print("Working on hashtags.")
     df.text_pp = remove_trailing_hashtags(df.text_pp)
     df.text_pp = resolve_in_text_hashtags(df.text_pp)
 
     # remove mentions
-    print("Replacing mentions with 'USER'")
+    print("Replacing mentions with 'USER'.")
     df.text_pp = [[re.sub(r'@\S+', "USER", sent) for sent in tweet] for tweet in df.text_pp]
 
     # remove non-alphanumerics and other special cases
-    print("Replacing alphanumerics with corresponding text.")
+    print("Replacing non-alphanumerics with corresponding text.")
     to_recode = {" & ": " en "}
     for key, value in to_recode.items():
         df.text_pp = [[sent.replace(key, value) for sent in tweet] for tweet in df.text_pp]
 
+    if remove_stopwords:
+        print("Removing stopwords.")
+        with open(f"{enlp.determine_root()}/res/iso_stopwords.json", "r") as f:
+            stopwords = json.load(f)['stopwords']
+        new_text_pp = []
+        for tweet in df.text_pp:
+            new_sents = []
+            for sent in tweet:
+                split = sent.split()
+                new_text = ' '.join([word for word in split if word not in stopwords])
+                new_sents.append(new_text)
+
+            # delete 'empty' sentences
+            new_sents = [sent for sent in new_sents if len(sent) > 0]
+
+            if len(new_sents) > 0:
+                new_text_pp.append(new_sents)
+            else:
+                new_text_pp.append('ONLY STOPWORDS')
+
+        df['text_pp'] = new_text_pp
+
     # save to disk
     print("Saving to disk")
-    df.to_pickle(f"{enlp.determine_root()}/data/tweets.pkl")
+    if remove_stopwords:
+        df.to_pickle(f"{enlp.determine_root()}/data/tweets_nostopw.pkl")
+    else:
+        df.to_pickle(f"{enlp.determine_root()}/data/tweets.pkl")

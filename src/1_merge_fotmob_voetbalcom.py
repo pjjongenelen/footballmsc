@@ -5,10 +5,8 @@ Input: 0_fotmob_scraping.pkl, 0_voetbalcom_scraping.csv
 Output: grades.csv
 """
 
-from locale import normalize
-import os
+import eredivisie_nlp as enlp
 import pandas as pd
-from pyparsing import col
 import unidecode
 
 
@@ -42,8 +40,8 @@ def normalize_strings(df: pd.DataFrame, columns: list) -> pd.DataFrame:
 
 def main():
     # load data
-    fotmob = pd.read_pickle(f"{os.getcwd()}/data/raw/grades/0_fotmob_scraping.pkl")
-    voetbalcom = pd.read_csv(f"{os.getcwd()}/data/raw/grades/0_voetbalcom_scraping.csv", index_col=[0])
+    fotmob = pd.read_pickle(f"{enlp.determine_root()}/data/raw/grades/fotmob.pkl")
+    voetbalcom = pd.read_csv(f"{enlp.determine_root()}/data/raw/grades/voetbalcom.csv", index_col=[0])
 
     # preprocess name strings
     fotmob = normalize_strings(fotmob, ['name'])
@@ -69,7 +67,7 @@ def main():
     df.drop(['hashtag_x', 'hashtag_y', 'name', 'club'], axis=1, inplace=True)
 
     # save to disk
-    df.to_csv(f"{os.getcwd()}/data/raw/grades/grades_raw.csv")
+    df.to_csv(f"{enlp.determine_root()}/data/raw/grades/grades_raw.csv")
     
 
 if __name__ == '__main__':
