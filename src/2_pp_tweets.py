@@ -19,7 +19,7 @@ import pandas as pd
 import re
 from tqdm import tqdm
 
-remove_stopwords = True
+remove_stopwords = False
 
 
 def trim_spaces(string):

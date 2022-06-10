@@ -14,10 +14,17 @@ ann_path = f"{enlp.determine_root()}/data/sentiment_annotations"
 
 
 def merge_source_dfs():
+    """
+    DOCSTRING
+    :return:
+    """
+
+    print("Loading source data")
     df_p_s = pd.read_excel(io=f"{ann_path}_pattern_with_stopwords.xlsx", sheet_name='Sheet_1')
     df_p_no_s = pd.read_excel(io=f"{ann_path}_pattern_without_stopwords.xlsx", sheet_name='Sheet_1')
     df_man = pd.read_excel(io=f"{ann_path}_manual_no_leakage.xlsx", sheet_name='Sheet_1')
 
+    print("Merging dataframes")
     return pd.DataFrame({
         'text': df_man.text,
         'text_no_s': df_p_no_s.text,
@@ -28,13 +35,15 @@ def merge_source_dfs():
 
 
 if __name__ == "__main__":
-    new_master = True
+    # load data
+    df = merge_source_dfs()
+    tweets = pd.read_pickle(enlp.determine_root() + "/data/tweets.pkl")
 
-    if new_master:
-        # load data
-        df = merge_source_dfs()
+    # add hashtags to master df
+    print("Adding hashtag column")
+    df['hashtag'] = tweets.hashtag
+    df['date'] = tweets.date
 
-        # save to disk
-        df.to_pickle(f"{enlp.determine_root()}/data/master_annotations.pkl")
-    else:
-        df = pd.read_pickle(f"{enlp.determine_root()}/data/master_annotations.pkl")
+    # save to disk
+    print("Saving to disk")
+    df.to_pickle(f"{enlp.determine_root()}/data/master_annotations.pkl")
