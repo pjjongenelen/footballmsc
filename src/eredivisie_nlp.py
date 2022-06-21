@@ -8,6 +8,10 @@ import platform
 from unidecode import unidecode
 
 
+def avg(array: list):
+    return sum(array) / len(array)
+
+
 def determine_root():
     if platform.node() == "DESKTOP-8K4NAR6":
         root = "C:/Users/timjo/OD/Silva_Ducis/Scriptie/footballmsc"
@@ -57,3 +61,16 @@ def home_and_away(hashtags: list):
             away_teams.append("az")
 
     return home_teams, away_teams
+
+
+def is_positive(number):
+    if number == 0:
+        return 0
+    elif number > 0:
+        return 1
+    else:
+        return -1
+
+
+def round_score(number):
+    return round(round(round(number, 1) / 3, 1) * 3, 1)

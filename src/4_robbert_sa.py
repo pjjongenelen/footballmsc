@@ -5,7 +5,6 @@ DOCSTRING
 import eredivisie_nlp as enlp
 import numpy as np
 import pandas as pd
-from pattern.nl import sentiment
 from transformers import RobertaTokenizer, RobertaForSequenceClassification
 
 
@@ -74,5 +73,5 @@ def annotate_tweets(tweet_pp_list):
 
 
 # load tweets dataframe
-# df = pd.read_pickle(f"{enlp.determine_root()}/data/tweets.pkl")
+df = pd.read_pickle(f"{enlp.determine_root()}/data/tweets.pkl")
 

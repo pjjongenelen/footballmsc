@@ -40,6 +40,10 @@ alias_dict = alias_dict | full_names
 manual = {'vindahl jensen': 'vindahl_az'}
 alias_dict = alias_dict | manual
 
+# manual deletions
+del alias_dict['min']
+del alias_dict['dan']
+
 # create a JSON file with all alias mappings
 with open(f"{enlp.determine_root()}/data/aliases.json", "w") as f:
     json.dump({'twitter': twitter_dict, 'name': full_names | unique_first_names | unique_last_names}, f, indent=4)

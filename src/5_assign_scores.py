@@ -37,6 +37,9 @@ grades['num_tweets'] = np.NAN
 # get set of hashtags to iterate over
 hashtags = [tag for tag in list(set(df.hashtag)) if tag in list(set(grades.hashtag))]
 
+# keep track of dataset size per fixture
+num_tweets = []
+
 for hashtag in tqdm(hashtags):
     # get playing times
     start_time = pd.to_datetime(grades[grades.hashtag == hashtag].datetime.tolist()[0])
@@ -46,6 +49,10 @@ for hashtag in tqdm(hashtags):
     before = df.loc[(df.hashtag == hashtag) & (df.date < start_time)]
     during = df.loc[(df.hashtag == hashtag) & (df.date > start_time) & (df.date < end_time)]
     after = df.loc[(df.hashtag == hashtag) & (df.date > end_time)]
+
+    # add number of tweets information to list
+    num_tweets.append([before.shape[0], during.shape[0], after.shape[0]])
+
     # for this first version we'll only use the tweets from during the match
     df_slices = [during]
 

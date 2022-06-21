@@ -25,10 +25,10 @@ def tokenize_function(examples):
 
 # put data in huggingface format
 print("Transforming data to HF format...")
-dataset = pd.read_excel(f"{enlp.determine_root()}/data/sentiment_annotations_EMPTY.xlsx")
-dataset = dataset[:1500]
-data = [{'label': int(annotation*10+10), 'text': text} for annotation, text in
-        zip(dataset.sentiment_pattern, dataset.text)]
+dataset = pd.read_excel(f"{enlp.determine_root()}/data/sentiment_annotations_manual_no_leakage.xlsx")
+dataset = dataset[dataset.annotation != 100]
+data = [{'label': int(annotation), 'text': text} for annotation, text in
+        zip(dataset.annotation_std, dataset.text)]
 
 # make train test split and save to JSON
 train_test_cutoff = int(len(data) * 0.9)
@@ -70,7 +70,7 @@ model = AutoModelForSequenceClassification.from_pretrained("pdelobelle/robbert-v
 
 # optimizer and lr
 optimizer = AdamW(model.parameters(), lr=5e-5)
-num_epochs = 3
+num_epochs = 5
 num_training_steps = num_epochs * len(train_dataloader)
 lr_scheduler = get_scheduler(name="linear", optimizer=optimizer, num_warmup_steps=0,
                              num_training_steps=num_training_steps)
