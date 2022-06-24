@@ -8,31 +8,17 @@ from tqdm import tqdm
 import pandas as pd
 
 # load data files
-df = pd.read_pickle(f"{enlp.determine_root()}/data/master_annotations.pkl")
-grades = pd.read_csv(enlp.determine_root() + "/data/grades.csv", index_col=[0])
+df = pd.read_pickle(f"{enlp.determine_root()}/data/master_annotations_with_teams.pkl")
+grades = pd.read_csv(enlp.determine_root() + "/data/grades_with_teams.csv", index_col=[0])
 
 # some further preprocessing specific to this code
-# 1) add players column to twitter dataframe containing all player mentions
-players = []
-for text in df.text_no_s:
-    tokenized = text.split()
-    token_players = []
-    for token in tokenized:
-        if "_" in token and ":" not in token:
-            # resolve small preprocessing bug with if statement
-            if token[-1] in [".", "!", "?"]:
-                token_players.append(token[:-1])
-            else:
-                token_players.append(token)
-    players.append(token_players)
-df['players'] = players
-# 2) lowercase gae
+# 1) lowercase gae
 df['hashtag'] = df['hashtag'].str.lower()
-# 3) add twitter columns to grades dataframe
-grades['score_m'] = np.NAN
-grades['score_p_s'] = np.NAN
-grades['score_p_no_s'] = np.NAN
+# 2) add twitter columns to grades dataframe
+grades['score_manual'] = np.NAN
+grades['score_pattern'] = np.NAN
 grades['num_tweets'] = np.NAN
+grades['score_robbert'] = np.NAN
 
 # get set of hashtags to iterate over
 hashtags = [tag for tag in list(set(df.hashtag)) if tag in list(set(grades.hashtag))]
@@ -67,14 +53,16 @@ for hashtag in tqdm(hashtags):
             grades_df_mention = grades.loc[(grades.hashtag == hashtag) & (grades.player_id == mention)]
             if grades_df_mention.shape[0] == 1:
                 # add the two pattern-based scores
-                for score in ['score_p_s', 'score_p_no_s']:
+                for score in ['score_pattern', 'score_robbert', 'score_manual']:
                     # get the list of sentiment scores
-                    mention_scores = [row[score] for i, row in subset.iterrows() if mention in row.players]
+                    mention_scores = [row[score] for _, row in subset.iterrows() if mention in row.players]
                     # calculate the average score and the number of mentions
                     avg_score = round(sum(mention_scores)/len(mention_scores), 1)
                     num_scores = len(mention_scores)
                     # add to the grades dataframe
                     grades.loc[(grades.hashtag == hashtag) & (grades.player_id == mention), score] = avg_score
                     grades.loc[(grades.hashtag == hashtag) & (grades.player_id == mention), 'num_tweets'] = num_scores
-                    
+
+grades['num_tweets'] = [0 if np.isnan(nt) == True else nt for nt in grades['num_tweets']]
+
 grades.to_pickle(enlp.determine_root() + "/data/grades+twitter.pkl")

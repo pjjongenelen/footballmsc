@@ -74,3 +74,20 @@ def is_positive(number):
 
 def round_score(number):
     return round(round(round(number, 1) / 3, 1) * 3, 1)
+
+
+def transform_score(score, to='sentiment'):
+    """
+    Converts model output scores {0:6} to SA floats {-0.9:0.9}
+
+    :param score: RobBERT sentiment score between 0 and 6
+    :returns: value between -0.9 (extremely negative) and 0.9 (extremely positive)
+    """
+    if to == 'sentiment':
+        score_mapping = {0: -0.9, 1: -0.6, 2: -0.3, 3: 0, 4: 0.3, 5: 0.6, 6: 0.9}
+    elif to == 'robbert':
+        score_mapping = {-0.9: 0, -0.6: 1, -0.3: 2, 0: 3, 0.3: 4, 0.6: 5, 0.9: 6}
+    else:
+        return "Please enter a valid value for the 'to' parameter."
+
+    return score_mapping[score]
